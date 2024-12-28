@@ -10,12 +10,7 @@ public class Bubble {
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
 				}
-			}
-			System.out.println();
-			for(int num: arr) {
-				System.out.print(num+" ");
-			}
-			
+			}			
 		}
 		
 		for(int num: arr) {
