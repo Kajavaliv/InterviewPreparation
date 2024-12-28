@@ -1,0 +1,12 @@
+saga pattern
+
+in distribted system  complex transcation across
+ multiple services is challenging to manage.
+the saga pattern provide a solution it decomposes long runnin trascantion into a series of smaller transcation more managle steps called sagas. each sagas respresnt the step in transcation and can be executed or compensated in case of failure.
+we have different type in saga patern
+1. orchestration
+2. choreograghy
+
+
+circuit breaker
+============

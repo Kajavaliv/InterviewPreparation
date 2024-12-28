@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=XilRv9wJhzc
+https://www.youtube.com/watch?v=Pj8Q_9dovgY&list=PLq3uEqRnr_2HY6LMQsbvsK4btj51sWhBS&index=2---springboot cache
+https://www.youtube.com/@meharchand-kumawat--circuitbreaker
+https://www.youtube.com/@sudocode
+https://www.youtube.com/@ultraconfig9489---yang model
+https://www.netconfcentral.org/help/netconf_docs Netconf notes
+https://www.youtube.com/watch?v=XilRv9wJhzc---springboot interviews
+https://www.youtube.com/watch?v=vge7qwCR1dA&list=PLt4nG7RVVk1g_LutiJ8_LvE914rIE5z4u--system design simple(coding simplified)
+https://www.youtube.com/@DefogTech/playlists defog
+
+https://www.vinsguru.com/orchestration-saga-pattern-with-spring-boot/
+------------------------
+https://medium.com/thefreshwrites/resttemplate-feignclient-webclient-with-spring-boot-f34979040b9e best for interview
+https://medium.com/@psdevraye/understanding-resttemplate-in-java-spring-when-and-how-to-use-it-79500987a53c

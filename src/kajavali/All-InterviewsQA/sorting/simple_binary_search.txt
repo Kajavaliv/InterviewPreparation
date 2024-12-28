@@ -1,0 +1,25 @@
+	 int a[] = {6,5,2,8,9,4};
+		 
+		 int left =0;
+		 int right= a.length-1;
+		 int target = 9;
+		 
+		int value=binarySearch(a,target,left,right);
+		System.out.println(value);
+
+
+
+private static int binarySearch(int[] a, int target, int left, int right) {
+
+		int mid=(left+right)/2;
+		
+		if(a[mid]==target) {
+			return mid;
+		}else if(a[mid]<target) {
+			return binarySearch(a,target,left+1,right);
+		}else {
+			return binarySearch(a,target,left,mid-1);
+		}		
+		
+	}
+

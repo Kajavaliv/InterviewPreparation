@@ -1,0 +1,66 @@
+
+public class ArrayListEx<T> {
+	
+	private Object[] arrays;
+	int size=0;
+	int CAPACITY=10;
+	
+	ArrayListEx(){
+		this.arrays = new Object[CAPACITY];
+	}
+	
+	
+	public void add(T value) {
+		if(size == arrays.length)
+			resize();
+		
+		arrays[size++]=value;
+		
+	}
+
+	private void resize() {
+		int newCapacity=CAPACITY*2;
+		Object[] newArrays=new Object[newCapacity];
+		for(int i=0;i<newArrays.length;i++) {
+			newArrays[i++]=arrays[i++];
+		}
+		arrays=newArrays;
+	}
+	
+	
+	public T remove(int index) throws Exception {
+		
+		if(index >= size || index < 0) {
+			throw new Exception();
+		}
+		
+		T oldValue = (T) arrays[index];
+		for(int i=index;i<arrays.length-1;i++) {
+			arrays[i]=arrays[i+1];
+		}
+		arrays[size-1]= null;
+		
+		return oldValue;
+	}
+	
+	public void display() {
+	   for (Object object : arrays) {
+		System.out.println(object);
+	}
+	}
+	
+
+
+	public static void main(String[] args) {
+		
+		ArrayListEx<Integer> ex = new ArrayListEx();
+		ex.add(100);
+		ex.add(200);
+		ex.add(400);
+		ex.add(600);
+		ex.display();
+		
+
+	}
+
+}

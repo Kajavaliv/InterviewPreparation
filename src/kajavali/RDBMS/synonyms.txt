@@ -1,0 +1,69 @@
+https://www.red-gate.com/simple-talk/databases/sql-server/t-sql-programming-sql-server/oracle-for-absolute-beginners-users-synonyms-privileges-roles/
+
+Synonyms:  It is alternative name of data base object. For example we have two schemas(schema1,schema2) So, here schema2 get the acesss to see one of the table from schema1, so schema2 select the access table
+----------
+followed by schema1 name. By using synonym  to mention the alias name of the access table 
+
+ex: select * from dup; -- here dup table is not in srinu schema.
+
+grant all on dup to srinu;
+
+once granted table to srinu. Srinu access the table followed by schema system.
+ex:
+select * from system.dup;
+----create synonym
+create synonym synonym_name for user.table; ->syntax
+create synonym duplicate for system.dup;
+---now we can access the table with synonym.
+select * from duplicate;
+
+----------------------------------------------------------------
+Two types of synonyms:
+1. Public synonym:  to create public synonym to access all other users for that synonym.
+ex:
+create public synonym duplicate for system.dup;
+select * from duplicate;
+
+2. Private synonym: by default it takes the private synonym.
+ex:
+create  synonym duplicate for system.dup;
+select * from duplicate;
+
+--------------------------------------------------------
+
+Notes:
+
+1. Public synonym  name should be similiar as table name or private synonym name. Public synonym saved as different namespace
+2. Private synonym name and table name should not be similiar. Private synonym and table name saved as same namespace. 
+
+ex:
+
+create table tab_syn(id number);
+create synonym tab_syn for system.tab_syn;  ----private synonym create same name as table.
+create public synonym tab_syn for system.tab_syn; ---public synonym created same name as table.
+
+insert into tab_syn values(1);
+select * from tab_syn;
+
+2. if the table name and public synonym as same name:
+  -> first local table is calling.
+  
+3. If we drop the master table:  synonym should be invalid state.
+drop table tab_syn;
+select * from tab_syn;
+
+4. ---to see the all synonyms and drop the synonym
+
+create public synonym tab_s for system.tab_syn;
+select * from all_synonyms where synonym_name='TAB_S';
+drop public synonym TAB_S;
+
+create  synonym tab_s for system.tab_syn;
+drop synonym TAB_S;
+select * from all_synonyms where synonym_name='TAB_S';
+
+
+
+----------------------------------------------------------------------------
+
+

@@ -1,0 +1,109 @@
+--sub-queries; we can write a query inside a query 
+----------------
+type of sub-queries 
+---------------------
+1. non-corelated subqueries: first sub-query will be executed the result set of sub-query will  be the input of outer query.
+
+type of non-corelated sub-queries:
+-----------------------------------
+1. single row subquery/scalar sub-query:  sub-query returns zero or one row 
+ex:
+select * from emp where dep_no  =(select dep_id from dep where dep_id=10 );
+
+2. multi-row subquery: sub-query returns more than one record.
+ex:
+select * from emp where dep_no  in(select dep_id from dep); 
+
+3. multi-column subquery:  sub-query returns multi columns
+ex:
+select * from emp where (emp_id,emp_name) in(select emp_id,emp_name from emp); -> inner query column and outer query where condition columns should be same columns and same datatypes
+
+
+select * 
+  from t1 
+where t1.id in(select id from t2 
+                         where t2.id in(select id 
+                                          from t4 
+                                          where id in(select id from t2)
+                                       )
+              );
+
+
+
+
+corelated sub-query: corelated sub-query references one or more column from the outer query the same columns references to inner query. it executed parallely from outer query to inner query
+--------------------
+ex:
+select * from emp a where a.rowid=(select max(b.rowid) from emp b where a.emp_id=b.emp_id and a.emp_name=b.emp_name and a.dep_no=b.dep_no and a.st_id = b.st_id);
+--> to select duplicate records
+select a.rowid,a.* from t2 a where a.rowid<(select max(b.rowid) from t2 b where a.id=b.id and a.name=b.name); 
+                                    a.rowid < AAAGxWAABAAALRhAAD
+
+--> to select non-duplicate records
+select * from emp a where a.rowid=(select max(b.rowid) from emp b where a.emp_id=b.emp_id and a.emp_name=b.emp_name and a.dep_no=b.dep_no and a.st_id = b.st_id);
+select * from t2 a where a.rowid=(select max(b.rowid) from t2 b where a.id=b.id and a.name=b.name);
+                                  AAAGxWAABAAALRhAAC,AAAGxWAABAAALRhAAB
+
+
+delete duplicate records:
+delete from emp_tab a where a.rowid<>(select max(b.rowid) from emp_tab b where a.emp_id=b.emp_id and a.name=b.name and a.dep_no=b.dep_no);
+
+select duplicate records:
+select * from emp_tab a where a.rowid<>(select max(b.rowid) from emp_tab b where a.emp_id=b.emp_id and a.name=b.name and a.dep_no=b.dep_no);
+
+
+----------------------------------------------------------------
+Advanced sub-queries/set operators:
+------------------------------------
+1. Union: its returns non-duplicate records
+ex:
+select id from t1
+union
+select id from t2;
+
+2. union all: returns including duplicate records.
+ex:
+select id from t1
+union all
+select id from t2;
+
+3. intersect : returns only matched records
+ex:
+select id from t1
+intersect
+select id from t2;
+
+4. minus: returns rows from second query will be substract in first query then returns remaining data from first query
+ex:
+select id from t1
+miuns
+select id from t2;
+
+
+
+select id from t1
+union all 
+select id from t2
+union 
+select id from t1
+intersect 
+select id from t4
+minus
+select id from t2;
+
+Note: 
+whenever we using set operators  number coumns and datatypes must and should be same , otherwise it throws errors.
+errors:
+ex: ORA-01789: query block has incorrect number of result columns
+select id,name from t1 --> 2 columns are selected
+union 
+select name from t2; -->1 column selected
+
+ex: ORA-01790: expression must have same datatype as corresponding expression
+select id, name from t1 --> here first selected  id is number, name is varchar2
+union 
+select name, id from t2;-->here first selected name is varchar2, id is number
+
+
+
+

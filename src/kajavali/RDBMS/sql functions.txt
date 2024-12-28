@@ -1,0 +1,187 @@
+---sql functions
+----single row functions: operates one row of input and returns one row of output 
+---character function: 
+1. upper(x): converts x into capital letters
+ex: 
+select upper('kasimvali') from dual;
+2. lower(x): converts x into small letters
+ex:
+select lower('KASIMVALI') from dual;
+3.INITCAP(x): converts  first letter of a word into capital letter from x
+ex:
+select initcap('kasim vali') from dual;
+4.length(x): counts number of letter from x.
+ex:
+select length('kasimvali') from dual;
+5. substr(x,start,lenght):  get sub part from a string based on start and length, Start : mentioned  position of a string ,length: end position of the string.
+ex: 
+select substr('kasimvali',2,4) from dual;
+select substr('kasimvali',-5) from dual;
+123456789 1
+kasimvali
+987654321  -1
+
+select substr('kasimvali',-5,3) from dual;
+
+6. instr(x,find_string,[,start][,occurance]): to find the specified character position
+ex:
+select instr('kasimvali','a',1,2) from dual;
+
+7. replace(x,search_string,replace_string): to replace one string to another value
+ex:
+select replace('kasimvali','vali','x') from dual;
+
+8.nvl(x,value): if x is null then value is returned
+ex:
+select nvl(null,'x') from dual;
+
+9. nvl2(x,value1,value2): if x ix not null then value1 is returned then value2.
+ex:
+select nvl2(null,'known','unknown') from dual;
+select nvl2('a','known','unknown') from dual;
+
+10.trim([trim_char from] x): trim the value from left and right in x. if we don't mention trim_char by default trim space from left to right in x.
+ex:
+select trim('0' from '00000abc0000') from dual;
+11. ltrim(x [,trim_string]): trims  character from left side in a x.
+ex:
+select ltrim('aaaaakasimaaa','a') from dual;
+12. rtrim(x [,trim_string]): trims  character from right side in a x.
+ex:
+select rtrim('aaaaakasimaaa','a') from dual;
+
+13.lpad(x,width [,pad_string]): to extend the string from left side of a string based on pad_strig
+ex:
+select lpad('kasim',10,'a') from dual;
+14.rpad(x,width [,pad_string]): to extend the string from right side of a string based on pad_strig
+ex:
+select rpad('kasim',10,'a') from dual;
+15. concat(x,y):  append two strings into one string
+ex:
+select concat('kasim','vali') from dual;
+select 'kasim'||'vali'||'chetluri' from dual;
+16. ASCII(x): ASCII(american standard code information interchange)converts character into number
+ex:
+select ascii('a') from dual;
+17. chr(x): converts  number into character
+ex:
+select chr(97) from dual;
+
+------------------------------------------------------------------------------------------
+numeric function:
+1. ceil(x): returns highest number
+ex:
+select ceil(5.5),ceil(5.1),ceil(5.10) from dual;
+2. floor(x): returns smallest number
+ex:
+select floor(5.1),floor(5.5),floor(5.10) from dual;
+3. trunc(x):returns begining of the  number
+ex:
+select trunc(-5.1),trunc(5.2),trunc(5.5),trunc(5.10) from dual;
+4. round(x):returns begining of the nearest number
+ex:
+select round(-5.1),round(5.2),round(5.5),round(5.10) from dual;
+5.mod(x,y): returns remainder
+ex:
+select mod(8,2) from dual;
+select mod(8,3) from dual;
+6. ABS(X):  it returns always positive number.
+ex: SELECT ABS(-10) from dual; 
+
+-----------------------------------------------------------------------------------------
+date functions:
+1. sysdate: returns system date only (year, month, date)
+ex:
+select sysdate from dual;
+2. systimestamp: returns system date along with hours, minutes, seconds and time zone.
+ex:
+select systimestamp from dual;
+3. Add_months(x,y): x is date, y is number of months need to add or subtract
+ex:
+select add_months(sysdate,2) from dual;
+select add_months(to_date('01/01/2022','dd/mm/yyyy'),-3) from dual;
+select add_months(to_date('01/01/2022','dd/mm/yyyy'),3) from dual;
+select add_months('01/01/2022',3) from dual;
+select round(months_between(sysdate,'16-09-1996')/12) from dual; ----age calculation
+4. Months_between(x,y): x is date from. Y is date to
+ex:
+select months_between(sysdate,'01-01-2020') from dual;
+5.last_day(x): it retuns last day of the month
+ex:
+select last_day(sysdate) from dual;
+select last_day('01-01-2022') from dual;
+6.next_day(x,day): returns nex day on day mentioned from x
+ex:
+select next_day(sysdate,'monday') from dual;
+select next_day('01-11-2022','sunday') from dual;
+7. trunc(x ,units): x is date, units is months,day,year based on units it returns begining of the day/month/year 
+ex:
+select trunc(sysdate,'day') from dual;
+select trunc(sysdate,'mm') from dual;
+select trunc(sysdate,'yyyy') from dual;
+select trunc(to_date('11-30-2022','mm-dd-yyyy'),'mm') from dual;  --01-11-22
+select trunc(systimestamp) from dual; -> only trunc removes timestamp(hr,min,sec)
+
+8. round(x ,units): x is date, units is months,day,year based on units it returns begining of the  nearest day/month/year
+ex:
+select round(sysdate,'day') from dual;
+select round(sysdate,'mm') from dual;
+select round(sysdate,'yyyy') from dual;
+select round(to_date('11-30-2022','mm-dd-yyyy'),'mm') from dual; --01-12-22
+
+--------------------------------------------------------------------
+conversion function:
+1. to_number(x): converts x into number
+ex:
+select to_number(10.0),to_number(10.50) from dual;
+2.to_char(x,format): converts date into string.
+ex:
+select to_char(sysdate,'mm/dd/yyy') from dual;
+3.to_date(x,format): converts string into date
+ex:
+select to_date('08/14/2022','mm/dd/yyyy') from dual;
+
+
+to_date(x,format): converts string into date ---string means its valid format of date that means date is  '08/14/2022' keep into strings('').
+ex:
+select to_date('08/14/2022','mm/dd/yyyy') from dual;
+
+date format:
+alter session set nls_date_format ='mm/dd/yyyy'; ---to chnage the date format is  session level;
+
+select to_char(t_date,'YYYY-MM-DD'), to_char(t_date,'mm/dd/yyyy'),to_char(t_date,'dd/mm/yyyy'),to_char(t_date,'mm-dd-yyyy'),to_char(t_date,'mm-dd-yy'),t_date original_date from t_date;
+
+--character function interview question:
+select substr('kasim.txt',1,instr('kasim.txt','.',1)-1) from dual; ---final result set dynamically;
+select f_name,instr(f_name,'.',1) as dot_len,   instr(f_name,'.',1)-1,   substr(f_name,1,   instr(f_name,'.',1) -1 ) from file_name; --dynamic
+select f_name,instr(f_name,'.',1) as dot_len,   instr(f_name,'.',1)-1,   substr(f_name,1,10) from file_name; ---statuc
+
+
+-------------------------------------------------------------------------------------
+
+Aggregate function: operates multi-rows at a time and returns single row of outut
+1.max(x): retunrs maximum value. ex: select max(sal) from sal;
+2.min(x): returns minimum value. ex: select min(sal) from sal;
+3.avg(x): returns average value. ex: select avg(sal) from sal;
+4.count(x): returns total number of rows: select count(*) from sal;
+5.sum(x): returns sum of rows. ex: select sum(sal) from sal;
+
+select max(sal),sum(sal),min(sal),count(*),avg(sal) from  sal;
+------------------------------------------------------
+dual table: dual table is a dummy table . it contains only one column. column name: dummy ,datatype: varchar2(1). use the dual table to select sql functions.
+ex:
+select * from dual;
+desc dual;   -> desc command describes the structure of the table 
+describe table_name -> describe command describes the structure of the table 
+
+
+-------------------------------------
+distinct keyword:  returns non-duplicate records
+ex: 
+    select distinct * from table_name;   -> avoid duplicate records on records wise
+    select unique * from table_name;  -> avoid duplicate records on records wise
+
+    select distinct column_name, column_name_1 from table_name ; -->  avoid duplicate records on column  wise
+       select unique column_name, column_name_1 from table_name ; -->  avoid duplicate records on column  wise
+    
+     

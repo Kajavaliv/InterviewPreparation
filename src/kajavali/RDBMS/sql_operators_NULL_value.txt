@@ -1,0 +1,93 @@
+ operators:
+-------------
+
+->Arithmetic operators: 
++ : Additions
+ex: select tab_id+1 from testing_tab;
+
+- : substraction 
+ex: select tab_id-1 from testing_tab;
+
+* : multiplication
+ex: select tab_id*1 from testing_tab;
+
+/ : division
+ex: select tab_id/1 form testing_tab;
+
+->comparing operators:
+-----------------------
+= : equal
+ex: select * from testing_tab where tab_id=1;
+
+<> or != : not equal 
+ex: select * from testing_tab where tab_id<>1;
+
+> : greater than
+ex: select * from testing_tab where tab_id>1;
+
+>= : greater than equal to 
+ex: select * from testing_tab where tab_id>=1;
+
+< : less than
+ex: select * from testing_tab where tab_id<1;
+
+<= : less than equal to 
+ex: select * from testing_tab where tab_id<=1;
+
+any : Compares one value with any value in a list
+ex: select * from testing_tab where tab_id > any(2,3,4);
+
+all: Compares one value with all values in a list
+ex: select * from testing_tab where tab_id > all(2,3,4);
+
+
+------------------------------------------------------
+
+sql operators:
+---------------
+IN : returns multiple records
+ex: select * from testing_tab where tab_id in (2,3,4);
+
+NOT IN: returns multiple records other than mentioned values;
+ex: select * from testing_tab where tab_id not in (2,3,4);
+
+IS NULL : to retrieve null records
+ex: select * from testing_tab where tab_naming is null;
+
+IS NOT NULL : to retrieve not  null records
+ex: select * from testing_tab where tab_naming is not null;
+
+between : retrieve specified range records
+ex: select * from testing_tab where tab_id between 2 and 5;
+
+not between: retrieve specified range values other than mentioned range values
+ex: select * from testing_tab where tab_id not between 2 and 5;
+
+LIKE: to search a string for a pattern. like operator used in where cluase
+----
+-> percent(%): Matches any number of characters beginning at the specified position
+ex: 
+select * from testing_tab where tab_naming like '%sai%' ;-- it returns when sai word is matched in the entire string
+select * from testing_tab where tab_naming like 'sai%' ; --its returns when sai word is matched with starting string.
+select * from testing_tab where tab_naming like '%sai' ; --its returns when sai word is matched with ending  string.
+
+-> Underscore (_) Matches one character in a specified position
+ex:
+select * from testing_tab where tab_naming like '_a%' ; --it returns when letter matched with mentioned position;
+select * from testing_tab where tab_naming like '__i%' ; ---3 letter matched with i
+select * from testing_tab where tab_naming like '%a_' ; -- last to first: a matched with last character.
+select * from testing_tab where tab_naming like '%s__' ; ---- last to first: a matched with last 3rd character.
+
+logical operators:
+-----------------
+->AND :  multiple conitions are must and should satisified 
+ex: select * from testing_tab where tab_id=1 and tab_naming='sai';
+
+-> OR: any one of the conition is satisified
+ex: select * from testing_tab where tab_id=1 or tab_naming='sai';
+
+
+--------------------------------------------------
+
+NULL : NULL is not a blank string in  database. its unknow value.  each and every null have contains some unknown value.
+

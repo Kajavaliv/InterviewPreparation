@@ -1,0 +1,24 @@
+int[] sourceArray = {1, 2, 3, 4, 5};		                  		
+int[] destinationArray = new int[7];	
+ int index=3;
+  int src =0;
+  int dst=0;		  
+		
+for(int i=0;i<index;i++) {
+	destinationArray[dst++]= sourceArray[src++];
+}
+src++;
+for(int i=index;i<sourceArray.length-1;i++) {
+  destinationArray[dst++]= sourceArray[src++];
+}
+	 
+ for(int i=0;i<destinationArray.length;i++) {
+	System.out.println(destinationArray[i]+" ");
+			  
+}
+
+====================================
+		 
+		  
+		  
+		  

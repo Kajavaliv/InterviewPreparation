@@ -1,0 +1,1778 @@
+9355-Mealcard
+3189-multi
+OKU167783784
+BRNPN7512B
+OFR272491872
+
+S01081O6N1803241200001
+XNC3120227
+
+IUW2033561
+
+https://github.com/Kajavaliv/InterviewPreparation/
+
+https://www.geeksforgeeks.org/tag/java-array-programs/page/4/
+
+Container: https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/Docker+based+MV+network+using+vrnetlab
+Tunnel:
+======
+https://nokia-my.sharepoint.com/:v:/p/kajavali_vadapalli_ext/Ee0KwoORqqBOuemIx83Q2ZoBZFnzwyPIVWjwBXRaZjxpjg
+
+JIRA Dashboard:
+===============
+http://nms-jira.ca.alcatel-lucent.com:8082/secure/Dashboard.jspa?selectPageId=17725
+
+Srikanth N-BRNPN7512B
+
+nagesh SDK machine : UI : http://135.250.24.168:3002/
+[11:17] Gurumaras, Srinivas (EXT - IN/Bangalore)
+Password: Honda@2021, username: dark
+
+traceroute cache hold-time 1 size 3000
+
+dharmavarapuratna@gmail.com
+prasannasai.3236@gmail.com
+bhavanam.nagarjunareddy99@gmail.com
+
+Nokia ID: 69174649
+UserName: kvadapal
+Mail: kajavali.vadapalli@nokia.com
+IP: 27.7.95.234
+Karthik and Abhinav
+http://nms-jira.ca.alcatel-lucent.com:8082/issues/?filter=38280
+Stack
+=====
+135.249.186.75
+
+20.11
+SDN - 135.249.149.68
+
+MOUNT : sudo mount tss08.labs.ca.alcatel-lucent.com:/nsp5/vol06/nspbuilds2 /nsp/builds
+
+triggerUpload equipment 35.228.0.6
+
+MDM: 135.249.151.6/root/NokNsp1!
+log path: /opt/nsp/mediation/log
+
+SDn:135.249.151.146/admin/NokiaNsp1!
+
+https://nokia.sharepoint.com/:x:/r/sites/MVMDM_Team/_layouts/15/Doc.aspx?sourcedoc=%7B720099FF-C008-4530-81C7-464291E63CB0%7D&file=Code%20Review%20Checklist_v0.xlsx&action=default&mobileredirect=true
+
+https://nokia.sharepoint.com/:x:/r/sites/MVMDM_Team/Shared%20Documents/General/DesignDoc/Code%20Review%20Checklist_v0.xlsx?d=w720099ffc008453081c7464291e63cb0&csf=1&web=1&e=NuJkmo
+
+3.Restart commands for NSP & MDM restart server 
+ 
+
+   MDM Server - systemctl stop nsp-mediation.service
+                systemctl start nsp-mediation.service
+                systemctl status nsp-mediation.service
+				
+				
+    restart NSP​
+    nspdctl restart
+	
+	
+    1) Stop MDM server​
+    2) Restart NSP​
+    3) Start MDM
+
+
+ git config --global core.autocrlf false
+ 
+ https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/Continuous+Improvements+%28CI%29+-+Road+Map
+
+   NSP/SDN server - 1.nspdctl restart  -- (It restarts all the below services)
+   
+https://developer.cisco.com/docs/openconfig-yang-release-9-3x/#!oc-lldp/configuring-the-hello-timer
+
+EVPN - L2DCI
+
+https://nokia-my.sharepoint.com/personal/radhika_h_ext_nokia_com/Documents/Microsoft%20Teams%20Chat%20Files/Call-with-Debu-Common_lib-implementation.mp4
+
+https://web.microsoftstream.com/video/22f4c67b-a863-44c3-b5d5-f110df76a8b8
+
+VNC: 135.250.24.168:1/Honda@2021
+http://135.250.25.65:3002/docs/app/guidelines/mdm-ami-nsd-evpn-v1.pdf
+export JAVA_OPTS="-Djavax.net.ssl.trustStore=nsp.truststore"
+
+./query-client -a 135.249.151.140  -p 30000 -i  "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/cisco.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i  "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Equipment/Port/Get/cisco.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i  "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Equipment/Lag/Get/cisco.properties"
+
+./config-client -a 135.249.151.140  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/L3Vpn/Delete/cisco-site.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Equipment/Port/Query/cisco-site.properties"
+
+./config-client -a 135.249.150.154  -p 30000 -i  "/workspace/EVPN/mdm-grpc-client-samples/bvaleti/cisco.properties"
+cisco_srv_RdRt_type2.properties
+ ./query-client -a 135.249.151.6 -p 30000 -i "/workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Port/Query/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.150.154 -p 30000 -i "/workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Elan/Create/cisco.properties"
+
+./query-client -a 135.249.152.144 -p 30000 -i "/workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Port/Query/cisco.properties"
+
+./query-client -a 135.249.152.13 -p 30000 -i "/workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Lag/Get/cisco.properties"
+
+./query-client -a 135.249.151.6 -p 30000 -i "/workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Lag/Query/cisco.properties"
+
+./query-client -a 135.249.152.144 -p 30000 -i "/workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Port/Get/cisco.properties"
+											 /workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/Port/Get
+
+./query-client -a 135.249.152.35 -p 30000 -i "/workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Elan/Query/cisco-elan-sites.properties"
+
+./query-client -a 135.249.152.35 -p 30000 -i "/workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Elan/Endpoint/Query/cisco.properties"
+
+./config-client -a 135.249.151.6 -p 30000 -i "MDM-Project/MDM-Workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Elan/Creat/cisco.properties"
+
+./query-client -a 135.249.150.223 -p 30000 -i "/workspace/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Elan/Query/cisco.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i  "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Equipment/Port/Query/cisco.properties"
+
+./query-client -a 135.249.151.140 -p 30000 -i "/workspace/EVPN/mdm-grpc-client-samples/src/main/resources/JSON_Requests/Equipment/NetworkElement/Query/cisco.properties"
+
+
+./query-client -a 135.249.151.140  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/L3Vpn/Get/cisco.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/L3Vpn/Query/cisco-endpoints.properties"
+
+./query-client -a 135.249.151.140  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/L3Vpn/Query/cisco.properties"
+
+
+./query-client -a 135.249.152.113  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.378-binary/resources/JSON_Requests/L3Vpn/Get/juniper-site.properties"
+
+./query-client -a 135.249.152.113  -p 30000 -i "/root/srini/grpc/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Equipment/Lag/Get/cisco.properties"
+
+./query-client -a 135.249.152.113  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.378-binary/resources/JSON_Requests/L3Vpn/Query/juniper-sites.properties"
+
+
+./query-client -a 135.249.147.159  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.147.159  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.291-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+./query-client -a 135.249.147.159  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.147.20  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.148.244  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.147.247  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+./query-client -a 135.249.149.12  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco.properties"
+
+./query-client -a 135.249.149.12  -p 30000 -i "/root/Aditya/grpc/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.221.38  -p 30000 -i "/root/Grpc/mdm-grpc-client-samples-1.6.0-rel.8-binary/resources/JSON_Requests/LLDP/juniper.properties"
+
+./query-client -a 135.249.221.38  -p 30000 -i "/root/Grpc/mdm-grpc-client-samples-1.6.0-rel.8-binary/resources/JSON_Requests/Equipment/Port/Get/cisco.properties"
+
+./query-client -a 135.249.219.201  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.6.0-rel.9-binary/resources/JSON_Requests/LLDP/juniper.properties"
+
+./query-client -a 135.249.218.154  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.5.0-rel.114-binary/resources/JSON_Requests/Cmodel/Fm/juniper.properties"
+
+./query-client -a 135.249.219.69  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.5.0-rel.114-binary/resources/JSON_Requests/Cmodel/Fm/juniper.properties"
+
+./query-client -a 135.249.218.133  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.5.0-rel.99-binary/resources/JSON_Requests/Cmodel/Equipment/juniper.properties"
+
+./query-client -a 135.249.148.109  -p 30000 -i "/root/Aditya/grpc/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+./query-client -a 135.249.211.160  -p 30000 -i "/root/RVPLSCase2/srini/grpc/mdm-grpc-client-samples-1.5.0-rel.99-binary/resources/JSON_Requests/Cmodel/Equipment/juniper.properties"
+
+./query-client -a 135.249.218.73  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.6.0-rel.0-binary/resources/JSON_Requests/Cmodel/Equipment/juniper.properties"
+
+./query-client -a 135.249.218.73  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.5.0-rel.114-binary/resources/JSON_Requests/Cmodel/Equipment/juniper.properties"
+
+./query-client -a 135.249.219.39  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.6.0-rel.0-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+
+
+./query-client -a 135.249.218.73  -p 30000 -i "/root/KAJa/mdm-grpc-client-samples-1.6.0-rel.9-binary/resources/JSON_Requests/LLDP/cisco.properties"
+
+./query-client -a 135.249.221.110  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.7.0-rel.19-binary/resources/JSON_Requests/LLDP/juniper.properties"
+
+./query-client -a 135.249.221.217  -p 30000 -i "/root/grpc/mdm-grpc-client-samples-1.7.0-rel.13-binary/resources/JSON_Requests/LLDP/cisco.properties"
+
+
+./query-client -a 135.249.146.13  -p 30000 -i "/root/Aditya/grpc/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/juniper.properties"
+
+./query-client -a 135.249.147.20  -p 30000 -i "/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR/cisco-iosxr.properties"
+./query-client -a 135.249.147.159  -p 30000 -i "/root/RPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/cisco.properties"
+/root/GRPC/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Cmodel/Equipment/CiscoIOSXR
+rpm -qa|grep netconf
+yum remove nsp-mdm-device-model-comm-netconf-cisco-iosxr-1.0.0-rel.4.x86_64
+================
+Package search
+http://orbw-web.ca.alcatel-lucent.com:6080/?q=oper-name&i=nope&files=&repos=
+check the build.gradle file for the specific project and include the package details
+ E-LAN L2VPN
+ EVPN L2VPN+Additional config
+
+git remote set-url origin git@orbw-git.ca.alcatel-lucent.com:nagev/mdm-adp-sdn-equipment-1-0-0-cisco-iosxr-netconf.git
+=============
+Stack creation URL
+http://blrnspcloud1.in.alcatel-lucent.com/dashboard/project/stacks/
+selecy URL and provide below link
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/raw/master/NSP/MDM_and_SDN.yaml
+Containarised URL:
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/raw/master/NSP/cloudNative/SDN_cloudNative.yaml
+
+==============
+
+debug:in karaf
+nsp@MDM-1084776501()> debug-on
+nsp@MDM-1084776501()> netconf:debug-on
+nsp@MDM-1084776501()> cli-trace
+
+nsp@MDM-1084776501()> list | grep sdn
+236 │ Active │  80 │ 1.3.0.rel63          │ mdm-ami-sdn-tunnel-1-0-0
+241 │ Active │  80 │ 1.2.0.rel4           │ mdm-ami-sdn-policy-1-0-0
+245 │ Active │  80 │ 1.3.0.rel124         │ mdm-ami-sdn-equipment-1-0-0
+
+
+
+dark/Honda@2021
+
+nagev
+Nexon@2021
+
+2.	NCS (IOS-XR) node: 135.228.0.6/135.228.0.7 (username/password is admin/Nokia2019!)
+
+Stack Details
+==============
+MDM: 135.249.151.6/root/NokNsp1!
+
+======================================
+Download YANG files from Node
+MG-SOFT->tools->Get Schema->Download
+======================================
+Credentials 
+SDN server login: (GUI based) - https://135.249.150.213/
+admin/NokiaNsp1!
+
+MDM server login: You can login from putty or MobaXterm
+root/NokNsp1!
+
+
+1.	Anoop_Introduction to NSP and Apps
+2.	Sridevi_Adaptor building in vagrant installation in karaf and debugging
+3.	Sridevi_KT_on_Project setup and Device Comm_Service-adp code walkthrough
+4.	Anoop_SDK Tool and adaptor generation using SDK Tool
+5.	Manju_Device Administrator Usage, Protocols Used, Adaptor design
+6.	Anoop_NSP_Discovery_CodeWalkthrough_1
+7.	Anoop_NSP_Discovery_CodeWalkthrough_2
+
+
+ssh key generation: ssh-keygen -t rsa -C "kajavali.vadapalli.ext@nokia.com" -b 4096
+Vagrant: 
+
+clone the project, do the changes and make .rpm build file and deploy into Karaf server.
+
+SDN is GUI server
+MDM is backend server
+
+IDE: IntelliJ IDEA
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+install+vagrant+for+NSP+MDM
+
+http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-tef-brazil-adp-nsd-service-1-0-0-juniper-17-2-0/merge_requests/103/diffs
+
+http://nms-jira.ca.alcatel-lucent.com:8082/secure/Dashboard.jspa
+
+kar:install file:/workspace/mdm-adp-nsd-service-1-0-0-cisco-iosxr/build/karaf/kar/mdm-adp-nsd-service-1-0-0-cisco-iosxr-1.3.1-rel.2-SNAPSHOT.kar
+
+./karaf for start server
+ctrl+d or ctrl+c for stop server
+
+SDN server user is admin/NokNsp1!
+MDM server user is root/NokNsp1!
+place .rpm file /root/Downloads
+
+to run .rpm file
+yum install -y .rpm file name
+
+5516
+
+To Debug we have to change DEFAULT_JAVA_DEBUG_PORT to 5005 or 28005 in .inc file
+
+28006
+./karaf debug
+
+nsp@MDM-1084776501()> debug-on
+nsp@MDM-1084776501()> netconf:debug true true true true
+
+MDM configuration in Intellij
+run/configuration->ip/port/
+
+AMI(UI)->MDM(Device-Model+DeviceHelper/Devicecomm+Service-Adaptor+Template)->Device(Node)S
+
+MDM Server
+Json as GPRS request-->MDM-->convert to device pojos--->push to the node configuration-->success/fail--->MDM
+
+SDK tool to generate adopter
+
+the IP of the server where SDK is installed and port:3002
+
+log location: /opt/nsp/mediation/log
+
+UI populated based on AMI YANG
+
+gradle clean build
+
+http://orbw-artifactory.ca.alcatel-lucent.com:8081/artifactory/alu-orbw-virtual/com/nokia/nsp/mdm/
+
+AMI pojo--> Read query
+	if CURD operations --> JSON format
+Framwork 	
+MDM --> convert AMI pojo to Device pojo(Java)
+Framwork
+Node(Device) --> understatands only yang
+
+Creating servises on top of Port(interfaces) ->adding additional functionality to subnetwork.
+
+
+Encap types:
+ge-1/0/0
+null-> outer inner *(4095)
+
+dot1q-> outer tag(some value), inner - *(4095)
+
+qnq-> outer and inner has some value
+
+
+static route(primary IP means destinations IP)
+Next Hop( its middle IP through which packets reach destination IP)
+
+P1 ---> next hop ---> P2
+
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/MVDT/Cisco+IOS+XR+Netconf+capability
+
+The -cfg.yang suffix denotes configuration 
+-oper*.yang isfor operational data statistics
+-oper is followed by -sub, indicating that a submodule(s) is available
+
+To get the YANG models from router we can use get-schema operation.
+
+SDK project to gradle
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+convert+an+SDK+generated+project+to+NSP+Jenkins-compatible+project
+
+mdm-device-model-cisco-iosxr
+
+SDK server credentials:135.254.154.45/root/mainstreet
+
+Project path in SDK: /root/nsp-mdm-sdk/workspace
+
+mdm-device-model-comm-cli-omniaccess
+
+
+=====================
+steps for vagrant:
+cdvagrant
+vagrant ssh
+cd /workspace/
+
+mkdir Kajavali
+copy the project into the directory
+
+then enter exit
+and do vagrant ssh
+goto the directory Kajavali
+goto the project
+run gradle clean build
+
+path:/home/anubp/Mdmsetup/Project_Workspace/Kajavali/
+=========================
+Once we deploy package in MDM server we have to check the karaf status
+login to MDM server
+cd /opt/nsp/mediation/karaf/bin/
+su nsp
+./client
+password:NokiaNsp1!
+list
+228 │ Active │  80 │ 1.5.5.rel0         │ mdm-adp-sdn-policy-1-0-0-cisco-iosxe
+229 │ Active │  80 │ 2.1.6.rel0         │ mdm-adp-sdn-tunnel-1-0-0-cisco-iosxe
+230 │ Active │  80 │ 1.7.4.rel0         │ mdm-adp-sdn-equipment-1-0-0-cisco-iosxe
+231 │ Active │  80 │ 2.19.0.rel0        │ mdm-adp-nsd-service-1-0-0-cisco-iosxe
+232 │ Active │  80 │ 2.3.1.rel0         │ mdm-adp-cmodel-equipment-1-0-0-cisco-iosxe
+233 │ Active │  80 │ 1.0.0.rel0         │ mdm-device-model-netconf-equipment
+
+
+How to connect Netconf node:
+ssh -s admin@ip -p 830 netconf
+
+ssh -s root@138.120.234.89 -p 830 netconf
+
+
+Config interface UP/DOWN
+
+interface hundredGigE 0/0/1/0
+shutdown
+commit
+
+noshut
+commit
+========
+interface tenGigE 0/0/0/2
+description Kajavalitest
+commit
+do show running-config interface tenGigE 0/0/0/2
+
+EVPN:
+====
+
+Cisco-IOS-XR-l2vpn-cfg
+​
+sdnServer:
+135.249.151.121
+	
+mdmServer:	
+135.249.151.57
+
+http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-adp-nsd-evpn-v1-juniper-17-2-0/
+
+​1) NSP GUI --> Juniper Reference ----How to Create EVPN / ELAN 
+​
+2) WE have EVPN Yang (Cisco-IOS-XR-l2vpn-cfg.yang) in the device model and on top of that need to create EVPN adaptor
+
+
+Nagesh:
+135.250.24.168
+dark: Honda@2021
+ 
+Anoop:
+135.254.154.43:2
+ansnair: NokNsp1!
+While connecting to vnc PW: Nokia@123
+
+
+
+File Path:/opt/nsp/mediation/bin/logback-included.xml
+
+
+ <logger name="com.nokia.nsp.mf.server.impl.QueryService" level="DEBUG"/>
+ 
+135.249.151.168 MDM
+
+135.249.152.40 SDN
+ 
+ 
+ 
+ 
+ sdnServerNo description given
+135.249.150.93
+mdmServerNo description given
+135.249.150.182
+
+
+
+
+RP/0/RP0/CPU0:NCS2(config)#show running-config ssh
+Wed Oct 7 13:08:15.147 UTC
+ssh server session-limit 20
+
+
+STASH
+==========
+C:\Project_Space\mdm-adp-nsd-evpn-v1-cisco-iosxr-netconf>git stash
+Saved working directory and index state WIP on NSPD-265947: ce020d2 [jenkins] bumping version number.
+
+C:\Project_Space\mdm-adp-nsd-evpn-v1-cisco-iosxr-netconf>git stash list
+stash@{0}: WIP on NSPD-265947: ce020d2 [jenkins] bumping version number.
+
+
+C:\Project_Space\mdm-adp-shared-service>git stash
+Saved working directory and index state WIP on NSPF-213549-MR-CHANGES: 37de9d1 MR comments has been takencare
+
+C:\Project_Space\mdm-adp-shared-service>git stash list
+stash@{0}: WIP on NSPF-213549-MR-CHANGES: 37de9d1 MR comments has been takencare
+
+
+git checkout master
+
+git pull
+git checkout SNMPTARGETCHANGE
+git merge master
+git push
+
+
+
+
+
+Hathway: 4483
+
+gNMI:
+21.3 and above
+
+135.121.20.78 - auto/Alcatel
+
+
+[16:35] Bhavanasi, Sreedhar (Nokia - IN/Bangalore)
+    
+Interface-Configuration Get
+==================
+<?xml version="1.0" encoding="UTF-8"?><nc:rpc xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:message-id="220404141300459"><nc:get xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"><nc:filter nc:type="subtree"><interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg"/>
+​[16:36] Bhavanasi, Sreedhar (Nokia - IN/Bangalore)
+    
+Interface Properties Get
+========================
+<nc:get xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+<nc:filter nc:type="subtree">
+<interface-properties xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-oper"/>
+</nc:filter>
+</nc:get>
+
+
+GNMI:
+https://nokia-my.sharepoint.com/personal/radhika_h_ext_nokia_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fradhika%5Fh%5Fext%5Fnokia%5Fcom%2FDocuments%2FRecordings%2FDiscussion%20on%20gNMI%2D20210108%5F143407%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fradhika%5Fh%5Fext%5Fnokia%5Fcom%2FDocuments%2FRecordings&originalPath=aHR0cHM6Ly9ub2tpYS1teS5zaGFyZXBvaW50LmNvbS86djovcC9yYWRoaWthX2hfZXh0L0VRMzJyd185X1dORmxiWTJaVkZhVFhrQmxlb0NnT3djRTNrSWFUTzJEU3NtT2c_cnRpbWU9bm15TlQ3MnoyRWc
+
+
+
+GRPC:
+[Tuesday 15:41] Gurumaras, Srinivas (EXT - IN/Bangalore)
+    
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+use+mdm-grpc-client-samples+for+MDM+Node+Configuration
+​[Tuesday 15:43] Gurumaras, Srinivas (EXT - IN/Bangalore)
+    
+wget http://orbw-artifactory.ca.alcatel-lucent.com:8081/artifactory/alu-orbw-snapshot-local/com/nokia/nsp/mdm/mdm-grpc-client-samples/1.3.0-rel.338/mdm-grpc-client-samples-1.3.0-rel.338-binary.tar
+​[Tuesday 15:44] Gurumaras, Srinivas (EXT - IN/Bangalore)
+    
+scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no root@135.249.221.110:/opt/nsp/os/ssl/nsp.truststore .
+​[Tuesday 15:45] Gurumaras, Srinivas (EXT - IN/Bangalore)
+    
+export JAVA_OPTS="-Djavax.net.ssl.trustStore=nsp.truststore"
+​[Tuesday 15:46] Gurumaras, Srinivas (EXT - IN/Bangalore)
+    
+[root@vmdm-gurumara-20 bin]#  ./config-client -a 135.249.150.140 -p 30000 -i /root/grpc/mdm-grpc-client-samples-1.3.0-rel.338-binary/resources/JSON_Requests/Elan/Create/cisco.properties
+
+NetSup
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/Basics+of+Cmodel+Equipment+Adaptor
+
+
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <filter>
+    <lldp xmlns="http://openconfig.net/yang/lldp"/>
+  </filter>
+</get>
+
+255407
+PostGrey DB details:
+
+login to NSD server
+kubectl exec --stdin --tty nspos-postgresql-0 -- /bin/bash
+cd /opt/nsp/os/pgsql/bin/
+./psql -U nsp -d nspdb
+select * from equipment.networkelement;
+select * from equipment.abstractequipment_objectdetails;
+
+Persistance DB:
+
+full-resync <ne-id>
+
+[Yesterday 19:37] Vadapalli, Kajavali (EXT - IN/Bangalore)
+    nsp@MDM-1084776473()> persistence-read-class 35.228.0.7 Cisco-IOS-XR-ifmgr-oper:/interface-properties/data-nodes/data-node/system-view/interfaces
+finished NE ID: 35.228.0.7 take time(ms) :0
+
+To Remove CTRL ^M(control M) in diff windows :=> git config  core.whitespace cr-at-eol
+
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NP/Troubleshooting+Containers+in+NSP#TroubleshootingContainersinNSP-Howtogetrootaccessinsideapod
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<nc:rpc
+    xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" nc:message-id="614708233001">
+    <nc:get
+        xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+        <nc:filter nc:type="subtree">
+            <inventory
+                xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-invmgr-oper">
+                <entities>
+                    <entity>
+                        <attributes>
+                            <inv-basic-bag></inv-basic-bag>
+                        </attributes>
+                    </entity>
+                </entities>
+            </inventory>
+        </nc:filter>
+    </nc:get>
+</nc:rpc>
+
+
+mdm-adp-nsd-ies-v1-huawei-vrp
+mdm-tef-brazil-adp-nsd-ies-v1-huawei-vrp
+mdm-tef-brazil-ext-nsd-ies-v1-huawei-vrp
+
+
+[13:39] Ramigani, Manjunath (EXT - IN/Bangalore)
+    Huawei - 138.120.234.184 -- autohua/Nokia_123
+
+=====
+git checkout -b NSPD-289775
+git branch
+* NSPD-289775
+  master
+
+c:\Project_Space\MASTER\mdm-adp-cmodel-equipment-1-0-0-seiko>git status
+On branch NSPD-289775
+========
+
+git clone -c core.longpaths=true git@orbw-git.ca.alcatel-lucent.com:mdm/mdm-adp-nsd-service-1-0-0-huawei-vrp.git
+
+Velocity
+Freemaker
+
+Pattern
+(\(.*?\))
+
+
+2505211924096
+
+SNMP Trap:
+==========
+snmp-agent trap enable
+[HUAWEI] snmp-agent target-host trap address udp-domain 10.1.2.10 udp-port 50000 params securityname user001 v3 privacy
+
+snmp-server vrf Mgmt-intf
+host <NSPIP> traps version 2c auto
+snmp-server community <SNMP community string> RW
+snmp-server traps snmp linkup
+snmp-server traps snmp linkdown
+
+
+snmp-agent trap enable
+snmp-agent sys-info version v2c
+snmp-agent notify-filter-profile included profile_a linkUp
+snmp-agent notify-filter-profile included profile_a linkDown
+snmp-agent notify-filter-profile included profile_a ifAdminStatus               
+snmp-agent notify-filter-profile included profile_a ifOperStatus
+snmp-agent notify-filter-profile included profile_a sysUpTime              
+snmp-agent notify-filter-profile included profile_a snmpTrapOID
+snmp-agent target-host trap address udp-domain 10.8.8.8 params securityname cipher @%@%m%eiQi2Kz+-/Z:!gz24-a4IY@%@% v2c notify-filter-profile profile_a
+
+snmp-agent target-host trap address udp-domain 135.249.152.236 udp-port 162 params securityname kvadapal v3 privacy
+
+https://support.huawei.com/enterprise/en/doc/EDOC1100116638/76ea9be9/how-do-i-mask-snmp-traps
+
+8544
+
+iptunnel del JUN_LLDP
+
+135.122.21.69
+
+Containarised:
+================
+/opt/build/NSP-CN-20.11.0-rel.2175/tools/mdm/bin
+Installing adaptor:
+ display current-configuration interface {{endPointName2}}::ip address {{ipv4Address2C}} {{subnetMask}}::WAIT30
+./adaptor-suite.bash --install /root/Downloads/xr/iosXr-20.11.0-rel.154_v4.zip --user admin --pass NokiaNsp1!
+​kubectl get pods --all-namespaces
+kubectl exec --stdin --tty mdm-server-0 -- /bin/bash
+kubectl exec --stdin --tty nspos-kafka-0 -- /bin/bash
+kubectl exec --stdin --tty md-oam-app-86c4bc97c-4sflx -- /bin/bash
+kubectl exec --stdin --tty nspos-postgresql-primary-0 -- /bin/bash
+kubectl delete pod mdm-server-0
+kubectl delete pod nspos-kafka-0
+kubectl delete pod nspos-zookeeper-0
+kubectl delete pod nspos-trap-fwd-gbnxb
+kubectl exec --stdin --tty nspos-resync-fw-0 -- /bin/bash
+kubectl exec --stdin --tty nspos-kafka-0 -- /bin/bash
+kubectl exec --stdin --tty nspos-resync-fw-0 -- /bin/bash
+
+full-resync 38.120.234.184
+persistence-read-class 38.120.234.184 huawei-ifm:/ifm/interfaces/interface 500 |grep GigabitEthernet0/5/1
+persistence-read-class 38.120.234.184 huawei-ifm:/ifm/interfaces/interface/ifDynamicInfo 500 |grep GigabitEthernet1/0/4
+
+
+ 
++    public static boolean isOpenconfigSupportedNE(ReadContext readContext, IRxDevicePojoManager deviceAdaptation){
++        final ReadContext systemReadContext = new ReadContext(readContext.getNeId(), readContext.getNeType(), readContext.getNeVersion())
++                .setAdaptationHandler(readContext.getAdaptationHandler()).setReadFromNetwork(true);
++        final IDeviceReadRequest deviceReadRequest = new DeviceReadRequestBuilder()
++                .setClassId("configuration:/configuration/system")
++                .build();
++        List<IDevicePojo> lSystemList = deviceAdaptation.read(deviceReadRequest, systemReadContext).toList().blockingGet();
++        IDevicePojo lSystemPojo = lSystemList.iterator().next();
++        if(lSystemPojo.isAttrSet("schema")){
++            if(lSystemPojo.childContainer("schema").isAttrSet("openconfig")){
++                return true;
++            }
++        }
++        return false;
++    }
+
+
+
+NCS:135.228.0.7
+admin/vzw2020!
+135.249.144.41
+135.249.144.41
+root/mainstreet
+Te0/0/0/6
+killall -HUP gnome-shell
+
+Te0/0/0/6
+
+epf@mindtree.com
+[19:52] Ramigani, Manjunath (EXT - IN/Bangalore)
+    ./GenTrap LinkDown_Manju.properties
+​[19:52] Ramigani, Manjunath (EXT - IN/Bangalore)
+    ./GenTrap LinkUp_Manju.properties
+	
+	mdm-server-0
+	
+[Yesterday 18:14] Ramigani, Manjunath (EXT - IN/Bangalore)
+    135.250.25.27
+​[Yesterday 18:15] Ramigani, Manjunath (EXT - IN/Bangalore)
+    manjunath/Dilludolly@1
+
+	
+http://135.250.188.250:8080/sapro/#
+Mindtree2
+MindtreeScrum2_VZ
+
+
+	
+[16:33] Harshasree, Devarakonda (EXT - IN/Bangalore)
+    162.88.90.1/24 ->primary ip   162.88.90.11->nexthop 24.14.3.0/24 peers :162.88.90.100,24.14.3.108
+
+135.250.25.172 -> naveen/mainstreet
+root/M@1nstreet
+
+/home/naveen/MDMProject/ProjectWorkspcae/build-tools/nsp-vagrant
+
+HTML RUN: mocha --reporter webgui L3dci.js > L3dci-8-2-2.html
+
+vzw2020!
+
+"PrePause": {
+    "adp": {
+      "adpType": "ServiceIes",
+      "adpTemplateName": "."
+    },
+    "prePause": {
+      "prePauseLoop": 0.5
+    }
+  },
+  
+  
+ git push --set-upstream origin harsha_NSPF-243244
+ 
+ 
+ snmp-server host 135.249.147.210 traps version 2c private
+ 
+ http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-vz-template-evpn-v1-cisco-iosxr-netconf/-/blob/master/src/main/resources/external-templates/resync.meta.json
+ http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPD-278142?filter=-1
+ https://nokia-my.sharepoint.com/personal/radhika_h_ext_nokia_com/_layouts/15/onedrive.aspx?skipSignal=true&id=%2Fpersonal%2Fradhika%5Fh%5Fext%5Fnokia%5Fcom%2FDocuments%2FNSP%5FIP%5FTechnical%5Ftraining%2FTesting%2FAutomation%2FSapro%20Demo%20by%20Bala%2DDay1%2Emp4&parent=%2Fpersonal%2Fradhika%5Fh%5Fext%5Fnokia%5Fcom%2FDocuments%2FNSP%5FIP%5FTechnical%5Ftraining%2FTesting%2FAutomation
+ 
+ http://blrnspcloud1.in.alcatel-lucent.com/dashboard/auth/login/?next=/dashboard/project/stacks/stack/1e76986d-ae67-48f5-b27f-56e063eb83d7/
+ 
+ 
+ http://orbw-artifactory.ca.alcatel-lucent.com:8081/artifactory/alu-orbw-virtual/com/nokia/nsp/mdm/
+ 
+ http://orbw-web.ca.alcatel-lucent.com:6080/?q=L3AccessInterfaceHandler&i=nope&files=&repos=
+ 
+ https://nms-confluence.ca.alcatel-lucent.com:8443/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3D%7Ekgibbons%26title%3DTroubleshooting%2BTrap%2BForwarder%2B-%2BMDM%2BSNMP%2BPacket%2BFlow&permissionViolation=true
+ 
+ 
+ 
+ ./SaproTunnelCreate.sh.x Juniper_Lldp 192.168.178.31 192.168.178.32 135.249.221.211 192.168.96.159 kubernetes
+ 
+ sudo ./createTunnel.sh kajaJunolldp 192.168.178.29 192.168.178.30 192.168.96.159 135.249.221.211 135.250.190.128
+ 
+ ./createTunnel.sh lldpjuno 192.168.178.39 192.168.178.40 192.168.96.159 135.249.221.211 kubernetes
+ 
+route
+ 
+ 
+UserID: Mindtree1
+password: Mindtree_scrum1
+
+Username: Mindtree2 
+Password: MindtreeScrum2_VZ
+
+33252
+XRV Snmp Config:
+
+snmp-server host 135.249.147.210 traps version 2c auto
+snmp-server host 135.249.147.210 traps version 2c public
+snmp-server host 135.249.147.210 traps version 2c private
+
+snmp-server traps snmp linkup
+snmp-server traps snmp linkdown
+snmp-server traps snmp coldstart
+snmp-server traps snmp warmstart
+
+snmp-server trap link ietf
+snmp test trap snmp cold-start
+snmp test trap snmp warm-start
+
+cd /opt/nsp/os/pgsql/bin
+./psql -U nsp -d nspdb
+
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/master/generated/NSP/cloudNative/NSP_cloudNative.yaml
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/master/generated/NSP/cloudNative/NSP_cloudNative.yaml
+
+
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/raw/master/NSP/MDM_and_SDN.yaml
+
+snmp-server community auto RO
+
+135.249.150.32
+admin/admin
+
+
+XRv 7.1.1 node
+
+138.120.234.101
+
+asr 6.4.2
+
+auto/Alcatel
+
+
+
+================================
+RP/0/RP0/CPU0:msadgunt_7_XRv-A#show running-config snmp-server
+Mon Nov  8 12:03:41.998 UTC
+snmp-server vrf Mgmt-intf
+ host 135.249.148.224 traps version 2c auto
+ host 135.249.149.183 traps version 2c auto
+ host 135.249.149.187 traps version 2c auto
+ host 135.249.150.8 traps version 2c auto
+!
+snmp-server vrf management
+ host 135.249.148.224 traps version 2c public
+ host 135.249.148.224 traps version 2c private
+ host 135.249.149.183 traps version 2c public
+ host 135.249.149.187 traps version 2c public
+ host 135.249.150.8 traps version 2c public
+!
+snmp-server host 135.249.148.224 traps version 2c private
+snmp-server host 135.249.149.173 traps version 2c private
+snmp-server host 135.249.149.183 traps version 2c private
+snmp-server host 135.249.149.187 traps version 2c private
+snmp-server host 135.249.150.8 traps version 2c private
+snmp-server community auto RO
+snmp-server community public RO IPv4 ACL_SNMP
+snmp-server community private RW
+snmp-server group Group_SNMPv3 v3 noauth
+snmp-server traps rf
+snmp-server traps bfd
+snmp-server traps bgp cbgp2
+snmp-server traps bgp
+snmp-server traps ntp
+snmp-server traps pim neighbor-change
+snmp-server traps pim invalid-message-received
+snmp-server traps pim rp-mapping-change
+snmp-server traps pim interface-state-change
+snmp-server traps pki
+snmp-server traps copy-complete
+snmp-server traps hsrp
+snmp-server traps ipsla
+snmp-server traps msdp peer-state-change
+snmp-server traps snmp
+snmp-server traps snmp linkup
+snmp-server traps snmp linkdown
+snmp-server traps snmp coldstart
+snmp-server traps snmp warmstart
+snmp-server traps vrrp events
+snmp-server traps flash removal
+snmp-server traps flash insertion
+snmp-server traps alarm
+snmp-server traps ipsec tunnel stop
+snmp-server traps ipsec tunnel start
+snmp-server traps power
+snmp-server traps mpls traffic-eng up
+snmp-server traps mpls traffic-eng down
+snmp-server traps mpls traffic-eng reroute
+snmp-server traps mpls traffic-eng reoptimize
+snmp-server traps config
+snmp-server traps entity
+snmp-server traps mpls frr all
+snmp-server traps mpls frr protected
+snmp-server traps mpls frr unprotected
+snmp-server traps isakmp tunnel stop
+snmp-server traps isakmp tunnel start
+snmp-server traps isis all
+snmp-server traps mpls ldp up
+snmp-server traps mpls ldp down
+snmp-server traps mpls ldp threshold
+snmp-server traps sensor
+snmp-server traps selective-vrf-download role-change
+snmp-server traps syslog
+snmp-server traps system
+snmp-server traps ospf lsa lsa-maxage
+snmp-server traps ospf lsa lsa-originate
+snmp-server traps ospf errors bad-packet
+snmp-server traps ospf errors authentication-failure
+snmp-server traps ospf errors config-error
+snmp-server traps ospf errors virt-bad-packet
+snmp-server traps ospf errors virt-authentication-failure
+snmp-server traps ospf errors virt-config-error
+snmp-server traps ospf retransmit packets
+snmp-server traps ospf retransmit virt-packets
+snmp-server traps ospf state-change if-state-change
+snmp-server traps ospf state-change neighbor-state-change
+snmp-server traps ospf state-change virtif-state-change
+snmp-server traps ospf state-change virtneighbor-state-change
+snmp-server traps mpls traffic-eng p2mp up
+snmp-server traps mpls traffic-eng p2mp down
+snmp-server traps rsvp all
+snmp-server traps rsvp new-flow
+snmp-server traps rsvp lost-flow
+snmp-server traps l2tun sessions
+snmp-server traps l2tun tunnel-up
+snmp-server traps l2tun tunnel-down
+snmp-server traps l2tun pseudowire status
+snmp-server traps vpls all
+snmp-server traps vpls status
+snmp-server traps vpls full-clear
+snmp-server traps vpls full-raise
+snmp-server traps diameter peerup
+snmp-server traps diameter peerdown
+snmp-server traps diameter protocolerror
+snmp-server traps diameter permanentfail
+snmp-server traps diameter transientfail
+snmp-server traps l2vpn all
+snmp-server traps l2vpn vc-up
+snmp-server traps l2vpn vc-down
+snmp-server traps mpls l3vpn all
+snmp-server traps mpls l3vpn vrf-up
+snmp-server traps mpls l3vpn vrf-down
+snmp-server traps mpls l3vpn max-threshold-cleared
+snmp-server traps mpls l3vpn max-threshold-exceeded
+snmp-server traps mpls l3vpn mid-threshold-exceeded
+snmp-server traps mpls l3vpn max-threshold-reissue-notif-time 1
+snmp-server traps bridgemib
+snmp-server traps ospfv3 errors bad-packet
+snmp-server traps ospfv3 errors config-error
+snmp-server traps ospfv3 errors virt-bad-packet
+snmp-server traps ospfv3 state-change if-state-change
+snmp-server traps ospfv3 state-change neighbor-state-change
+snmp-server traps ospfv3 state-change virtif-state-change
+snmp-server traps ospfv3 state-change virtneighbor-state-change
+snmp-server traps ospfv3 state-change restart-status-change
+snmp-server traps ospfv3 state-change restart-virtual-helper-status-change
+snmp-server traps fru-ctrl
+snmp-server traps subscriber session-agg node
+snmp-server traps subscriber session-agg access-interface
+snmp-server traps addrpool low
+snmp-server traps addrpool high
+snmp-server traps cisco-entity-ext
+snmp-server traps entity-state operstatus
+snmp-server traps entity-state switchover
+snmp-server traps entity-redundancy all
+snmp-server traps entity-redundancy status
+snmp-server traps entity-redundancy switchover
+snmp-server chassis-id ASR9000
+snmp-server trap-source IPv4 MgmtEth0/RP0/CPU0/0
+snmp-server interface subset 1 regular-expression ".+"
+ notification linkupdown
+!
+
+
+===============================================================
+https://135.249.147.12:8543/sdn/doc
+
+curl -X POST -k -H 'Content-Type: application/json' -H 'Authorization: Basic YWRtaW46Tm9raWFOc3AxIQ==' -i 'https://135.249.148.139/rest-gateway/rest/api/v1/auth/token' --data '{
+"grant_type": "client_credentials"
+}'
+
+
+RP/0/RP0/CPU0:msadgunt_7_XRv-A#show running-config interface Gi0/0/0/2.10
+Fri Nov 19 09:33:16.757 UTC
+interface GigabitEthernet0/0/0/2.10
+ ipv4 address 10.10.15.1 255.255.255.252
+ encapsulation dot1q 10
+!
+
+
+https://www.geeksforgeeks.org/find-pythagorean-triplet-in-an-unsorted-array/
+https://www.geeksforgeeks.org/amazon-interview-questions/
+https://www.geeksforgeeks.org/commonly-asked-java-programming-interview-questions-set-1/
+
+LOCAL DEBUG:
+vi /opt/nsp/config/helm/values/mdm/mdm-server/values.yaml
+
+debug_port: 28006
+
+kubectl port-forward --address 0.0.0.0 mdm-server-0 28006:28006
+
+
+====================
+
+NSP Detail :
+
+
+Please find below the Singtel Edu Lab NSP IP details for R&D’s perusal, 
+172.30.21.115 nsd-1
+172.30.21.114 nfmp-1
+172.30.21.105 mdm-1
+172.30.21.126 auxdb-1
+172.30.21.117 test-VM The login credentials are as below;
+Username: rootPassword: root123
+
+
+Cisco to Cisco  : ILAB-SC-P1-B HundredGigE0/0/0/35 to ILAB-SC-P2-B HundredGigE0/0/0/35Cisco  to Nokia : ILAB-SC-P2-B HundredGigE0/0/0/34 to ILAB-SC-P2-A 1/1/c7Note:- do not change configurations of any other ports.
+
+
+Nodes :
+
+172.16.32.21/27
+172.16.32.22/27
+
+===
+
+Steps to connect to Node :
+
+1) Connect to NFMP (172.30.21.114)
+2) ssh vsim     
+P@ssw0rd3)
+ ssh nokia-mdm-karthikkumar@172.16.32.21   pBNkM3Md!%
+
+Before executing the above steps you must connect to LAB
+
+
+
+show support detail
+
+===== Host information =====
+Hostname         : NS-2250_DC
+TcpKeepAlive     : 180
+IPaddress(eth1)  : -
+IPaddress(eth2)  : -
+IPaddress(bond1) : 10.59.132.251/24
+
+PowerTypes Reforence:
+
+http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-adp-cmodel-equipment-1-0-0-sros-16-0-r4/-/blob/master/src/main/java/com/nokia/adaptation/sros/impl/ami/equipment/EquipmentReadResponseConverter.java#L668
+
+135.249.152.131
+
+
+
+		
+		
+NTT PENDING THINGs:
+
+1. Traptarget
+2. Polling
+3. RealTime
+
+FM:
+
+LinkUp/Down Trap details
+Polling
+
+NS Automation
+
+
+
+Bond status should display in description attribute in NS (Status = Active/StandBy) -> Kaja
+MAC Address in port object -> Kaja
+Polling / Real time ( will track with separate BLs) -> Get and Query differentiation -> Kaja
+
+
+
+[20-12-2021 10:49] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-247192
+
+[20-12-2021 10:50] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-250633
+
+[20-12-2021 10:50] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-250636
+
+[20-12-2021 10:50] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-247219
+
+[20-12-2021 10:50] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-247218
+
+[20-12-2021 10:51] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-247220
+
+[20-12-2021 10:51] Ramigani, Manjunath (EXT - IN/Bangalore)
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPF-247290
+
+
+
+
+10.59.132.44 - admin/admin
+
+configure port 3/2/21 shutdown
+
+configure port 3/2/21 no shutdown
+
+NS-2250_DC
+
+
+[kajavali@kajavali nsp-vagrant]$ pwd
+/home/kajavali/build-tools/nsp-vagrant
+[kajavali@kajavali nsp-vagrant]$ vagrant ssh
+Last login: Wed Jun 30 08:29:11 2021 from 10.0.2.2
+[vagrant@nsp-latest ~]$
+
+
+
+Kajavali_Vadapalli
+Singtel0200!
+SC7NO7GO
+
+
+
+SF uses either “management-address” – remote peer ip address
+
+      or  “system-name” – remote node name,
+
+      or  “ chassis-id”
+
+to find the remote node
+
+
+
+
+select * from lldp.openconfig_lldp_lldp_interfaces_interface_source_fdns where sourcefdns like '%{{interfaceName}}%' AND sourcefdns like '%cmodel%' AND sourcefdns like '%{{sys}}%'
+select * from lldp.openconfig_lldp_lldp_interfaces_interface_config_source_fdns where sourcefdns like '%{{interfaceName}}%' AND sourcefdns like '%{{sys}}%'
+select * from lldp.openconfig_lldp_lldp_interfaces_interface_source_fdns where sourcefdns like '%{{interfaceName}}%' AND sourcefdns like '%{{sys}}%'
+select * from lldp.openconfig_lldp_lldp_interfaces_interface_neighbors_neighbor where neid like '%{{sys}}%' AND name like '%{{interfaceName}}%'
+select * from lldp.openconfig_80884858rfaces_interface_neighbors_neighbor_state where neid like '%{{sys}}%' AND name like '%{{interfaceName}}%'
+select * from lldp.openconfig_lldp_lldp_interfaces_interface where neid like '%{{sys}}%' AND name like '%{{interfaceName}}%'
+select * from lldp.openconfig_lldp_lldp_interfaces_interface_state_source_fdns where sourcefdns like '%{{interfaceName}}%' AND sourcefdns like '%{{sys}}%'
+select * from service.service where name like '{{name}}' AND id like '{{id}}'
+
+
+
+
+
+=============================
+
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPD-283057 -> Golive
+
+http://nms-jira.ca.alcatel-lucent.com:8082/browse/NSPD-284630 -> Verizon
+
+Golive 
+IssueJuniper Validation 
+Huawei impact
+Regression schedule 
+
+
+
+
+
+
+================
+nsp@mdm-server-0()> list | grep hua
+251 │ Waiting │  80 │ 1.5.0.rel3          │ mdm-adp-cmodel-equipment-1-0-0-huawei-vrp-netconf
+252 │ Active  │  80 │ 1.0.1.rel0          │ mdm-adp-cmodel-fm-v2-huawei-vrp
+253 │ Active  │  80 │ 1.6.0.rel0          │ mdm-adp-nsd-service-1-0-0-huawei-vrp-netconf
+254 │ Active  │  80 │ 1.4.0.rel0          │ mdm-adp-sdn-equipment-1-0-0-huawei-vrp-netconf
+257 │ Waiting │  80 │ 1.1.0.rel0          │ mdm-device-comm-snmp-huawei-vrp
+260 │ Active  │  80 │ 1.4.1.rel0          │ mdm-discovery-huawei-netconf
+263 │ Active  │  80 │ 1.1.0.rel0          │ mdm-device-comm-netconf-huawei-NE8K-M8-V800R013C00SPC100
+264 │ Waiting │  80 │ 1.0.0.rel15         │ mdm-device-comm-netconf-huawei-NE40E-X16-V800R011C10SPC100
+265 │ Active  │  80 │ 1.1.0.rel1-SNAPSHOT │ mdm-device-model-huawei-NE8K-M8-V800R013C00SPC100
+266 │ Active  │  80 │ 1.3.1.rel3-SNAPSHOT │ mdm-device-model-huawei-NE9K-20-V800R012C00SPC300
+
+
+
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <source>
+    <running/>
+  </source>
+  <filter type="subtree">
+    <interfaces xmlns="http://openconfig.net/yang/interfaces"/>
+  </filter>
+</get-config>
+
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<lldp xmlns="http://openconfig.net/yang/lldp">
+<state/>
+</lldp>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<lldp xmlns="http://openconfig.net/yang/Cisco-IOS-XR-infra-sla-cfg">
+<state/>
+</lldp>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<interfaces xmlns="http://openconfig.net/yang/openconfig-interfaces">
+<state/>
+</interfaces>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<information xmlns="http://xml.juniper.net/junos/19.4R0/junos/yang/information">
+
+</information>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<sla xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-sla-cfg"/>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<interface-configurations xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-ifmgr-cfg"/>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<ethernet-features xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-l2-eth-infra-cfg"/>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<inventory xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-invmgr-oper"/>
+</filter>
+</get>
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<alarm-logger xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-alarm-logger-oper"/>
+</filter>
+</get>
+
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<snmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-snmp-agent-oper"> 
+                <information>
+                <system-name>
+                <system-name/>
+                </system-name>
+                </information>
+                </snmp>
+				</filter>
+</get>
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+<inventory xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-invmgr-oper\>
+                <entities>
+                <entity>
+                <name>Rack 0</name>
+                <attributes>
+                <inv-basic-bag/>
+                </attributes>
+                </entity>
+                </entities>
+                </inventory>
+</filter>
+</get>				
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <filter>
+    <configuration xmlns="http://yang.juniper.net/junos/conf/root">
+      <system/>
+    </configuration>
+  </filter>
+</get>
+
+
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<filter>
+
+<host-names xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-shellutil-cfg"/>
+</filter>
+</get>
+<get xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+
+<filter>
+
+:/alarm-logger/alarms
+
+<alarm-logger xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-infra-alarm-logger-oper">" +
+                <alarms/>
+</alarm-logger>
+</filter>
+</get>
+<snmp xmlns="http://cisco.com/ns/yang/Cisco-IOS-XR-snmp-agent-cfg">" +
+                <system/>
+</snmp>
+</filter>
+</get>
+
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<source>
+<running/>
+</source>
+<filter>
+<alarm-logger xmlns="http://openconfig.net/yang/Cisco-IOS-XR-infra-alarm-logger-oper"/>
+</filter>
+</get-config>
+
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<source>
+<running/>
+</source>
+<filter>
+<lldp xmlns="http://openconfig.net/yang/lldp"/>
+</filter>
+</get-config>
+
+
+<get>
+<filter>
+<information xmlns="http://cisco.com/ns/yang/information"/>
+</filter></get>
+
+
+
+============================
+Following shared are the parameters that we should provide to create a setup with LLDP-V2 support.
+
+
+
+feature_packs : platformMdm, platformSdn, networkInfrastructureManagement-basicManagement
+
+node_flavor : FLAVOR_12_68
+
+node_image : RHEL-7.9-LATEST-x86_64
+
+sdn_version : 22.6.0-rel.latest
+
+adaptor_version : 22.6.0-rel.latest
+
+
+
+Also, we need to delete few un-wanted pods to bring LLDP pod up. Please delete the following pods.
+
+
+helm uninstall md-oam-app-5968747b45-lsw62
+helm uninstall lso-server-app
+
+helm uninstall md-oam-app
+
+helm uninstall nsp-mistral-engine-lsom
+
+helm uninstall nsp-mistral-executor-lsom
+
+helm uninstall nspos-prometheus
+
+
+kubectl port-forward --address 0.0.0.0 mdm-server-0 28006:28006 &
+
+http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-ami-openconfig-interfaces-v1
+/////////
+
+./SaproTunnelCreate.sh.x lldphua1 192.168.104.21 192.168.104.22 192.168.96.26 135.249.220.179 kubernetes
+
+./SaproTunnelCreate.sh.x harshalldp 192.169.41.1 192.169.41.2 192.168.97.20 135.249.221.217 kubernetes
+
+./SaproTunnelCreate.sh.x kajalldp 192.168.104.13 192.168.104.14 192.168.97.225 135.249.219.223 kubernetes
+
+
+nsp@mdm-server-0()> list | grep hua
+243 │ Waiting │  80 │ 1.5.0.rel3         │ mdm-adp-cmodel-equipment-1-0-0-huawei-vrp-netconf
+244 │ Active  │  80 │ 1.0.0.rel4         │ mdm-adp-openconfig-lldp-v2-huawei
+245 │ Waiting │  80 │ 1.1.0.rel0         │ mdm-device-comm-netconf-huawei-NE40E-X16-V800R011C10SPC100
+246 │ Active  │  80 │ 1.1.0.rel1         │ mdm-device-comm-netconf-huawei-NE8K-M8-V800R013C00SPC100
+247 │ Waiting │  80 │ 1.1.0.rel1         │ mdm-device-comm-snmp-huawei-vrp
+248 │ Active  │  80 │ 1.2.0.rel0         │ mdm-device-model-huawei-NE8K-M8-V800R013C00SPC100
+249 │ Active  │  80 │ 1.4.0.rel0         │ mdm-device-model-huawei-NE9K-20-V800R012C00SPC300
+250 │ Active  │  80 │ 1.4.1.rel0         │ mdm-discovery-huawei-netconf
+
+
+kubectl port-forward --address 0.0.0.0 mdm-server-0 28006:28006 &
+
+set chassis alarm ethernet link-down 
+
+
+/home/naveen/MDMProject/ProjectWorkspcae/mdm-device-model-comm-netconf-cisco-iosxr/build/generated/src/main/resources/meta/openconfigInterfaces/v1_0_2/com/nokia/nsp/mdm/device/model/yang/impl/client/openconfig_interfaces/v1_0_2/interfaces/interface_
+
+token:
+=====
+curl -X POST -k -H 'Content-Type: application/json' -H 'Authorization: Basic YWRtaW46Tm9raWFOc3AxIQ==' -i 'https://10.134.9.56:443/rest-gateway/rest/api/v1/auth/token' --data '{
+"grant_type":"client_credentials"
+}'
+
+TrapGen:
+135.249.144.41 - root/M@1nstreet
+
+
+1.Tunnel Creation
+ip addr add 135.249.212.248 dev enp1s0 label enp1s0.1766
+2.Tunnel Deletion
+ip addr del 10.59.132.82/32 dev enp1s0(nodeip)
+
+
+tcpdump -i eth0 port 162
+
+
+SINGTEL:
+mdm-discovery-cisco-iosxr-netconf - latest
+mdm-device-comm-snmp-cisco-iosxr - 1.2.0.rel  latest
+mdm-device-model-comm-netconf-cisco-iosxr - 1.7.0.rel  latest
+mdm-adp-cmodel-fm-1-0-0-cisco-iosxr-netconf - latest
+mdm-adp-shared-common-cmodel-equipment - 1.0.0.rel latest
+mdm-adp-shared-cisco-cmodel-equipment - 1.0.0.rel latest
+mdm-adp-cmodel-equipment-1-0-0-cisco-iosxr-netconf - 1.1.0.rel latest
+mdm-adp-cmodel-equipment-1-0-0-cisco-iosxr-netconf - (latest from 1.1.0-rel)
+mdm-adp-shared-cisco-cmodel-equipment - (latest from master)
+mdm-adp-shared-common-cmodel-equipment - (latest from 1.0.0-rel)
+
+
+XRv node kaja.. 135.249.212.248 auto/Alcatel
+
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+configure+Cisco+IOSXR+for+telemetry+streaming+over+grpc
+
+gnmic -a 135.250.75.101:57400 -u admin -p Alcatel --insecure sub --path "openconfig-lldp:/lldp/interfaces/interface/neighbors/neighbor" --log --timeout 1m -e proto --stream-mode ON_CHANG
+
+gnmic -a 135.249.150.32:57400 -u admin -p admin --insecure get --path "Cisco-IOS-XR-ifmgr-cfg:interface-configurations" -e JSON_IETF --log
+
+gnmic -a 135.121.100.179:57400 -u admin -p Alcatel --insecure capabilities --log --timeout 1m
+
+NCS autocis/Nokia2022!(root/mainstreet)(netconf/grpc), snmp : root/admin(root/auto)
+
+OAM feature_packs [platformSdn,platform-baseServices,platformMdm,serviceAssurance]
+platformMdm,platformSdn,serviceActivationAndConfiguration-originalServiceFulfillment,platform-baseServices,serviceAssurance
+
+Create 1 node k8s cluster.  Create node with this template URL http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/raw/master/kubernetes/k8s-1vm-1master-1node.yaml and use these values for template : 
+
+Kubernetes storage : nspos-openebs-localpv
+
+NSP k8s release : use latest 
+
+Node flavour : FLAVOR_10_64
+
+Note: change RHEL-7.9-LATEST-x86_64-SELinuxPermissive to → RHEL-7.9-LATEST-x86_64
+
+kubectl get pods	List status of all pods
+kubectl get pod $podName	List status of single pod
+kubectl get svc	List all services
+kubectl get svc $svcName	List single service
+kubectl exec -it $podName /bin/bash	Enter the container
+kubectl expose pod $podName --target-port $debugPort
+
+--port $debugPort --name $svcName --type NodePort
+
+Expose the debug port of a pod
+helm delete --purge $pod	
+Delete a pod
+
+kubectl scale replicaset $podName --replicas=0	Stop a pod (some may restart automatically immediately after this)
+kubectl scale replicaset $podName --replicas=1	Restart pod
+
+
+
+====================
+Juniper FM:
+304 │ Active  │  80 │ 1.4.0.rel1           │ mdm-discovery-juniper
+305 │ Active  │  80 │ 1.3.5.rel0           │ mdm-device-juniper
+306 │ Waiting │  80 │ 1.12.0.rel4-SNAPSHOT │ mdm-device-comm-netconf-juniper-mx
+307 │ Active  │  80 │ 1.4.0.rel3           │ mdm-device-comm-snmp-juniper-mx
+308 │ Active  │  80 │ 1.6.1.rel2-SNAPSHOT  │ mdm-adp-cmodel-fm-v2-juniper
+309 │ Active  │  80 │ 2.2.0.rel15          │ mdm-adp-mdc-junos-17-2-0
+310 │ Active  │  80 │ 1.2.0.rel2           │ mdm-device-model-juniper-mx-17-2-0
+
+138.120.234.156
+
+269 │ Active  │  80 │ 1.2.0.rel1           │ mdm-error-formatter
+270 │ Active  │  80 │ 1.8.1.rel0           │ mdm-discovery-cisco-iosxr-netconf
+271 │ Active  │  80 │ 1.1.0.rel0           │ mdm-adaptor-util-netconf-cisco-iosxr
+272 │ Active  │  80 │ 1.19.1.rel1          │ mdm-device-model-comm-netconf-cisco-iosxr
+273 │ Waiting │  80 │ 1.10.0.rel2          │ mdm-device-comm-snmp-cisco-iosxr
+360 │ Active  │  80 │ 1.6.0.rel82-SNAPSHOT │ mdm-adp-cmodel-fm-v2-cisco-iosxr-g2
+
+
+
+ mdm-discovery-huawei-netconf
+244 │ Active  │  80 │ 1.2.0.rel0           │ mdm-device-model-huawei-NE8K-M8-V800R013C00SPC100
+245 │ Active  │  80 │ 1.2.0.rel0           │ mdm-device-comm-netconf-huawei-NE8K-M8-V800R013C00SPC100
+246 │ Active  │  80 │ 1.6.0.rel0           │ mdm-adp-shared-common-cmodel-equipment
+248 │ Active  │  80 │ 1.0.0.rel3-SNAPSHOT  │ mdm-adp-shared-huawei-cmodel-equipment
+249 │ Waiting │  80 │ 1.6.0.rel4-SNAPSHOT  │ mdm-adp-cmodel-equipment-1-0-0-huawei-vrp-netconf
+250 │ Active  │  80 │ 1.2.0.rel1           │ mdm-error-formatter
+251 │ Active  │  80 │ 1.8.1.rel0           │ mdm-discovery-cisco-iosxr-netconf
+252 │ Active  │  80 │ 1.1.0.rel0           │ mdm-adaptor-util-netconf-cisco-iosxr
+254 │ Waiting │  80 │ 1.10.1.rel0          │ mdm-device-comm-snmp-cisco-iosxr
+258 │ Waiting │  80 │ 1.0.0.rel4           │ mdm-adp-openconfig-interfaces-v1-cisco-iosxr
+259 │ Active  │  80 │ 1.20.0.rel1          │ mdm-device-model-comm-netconf-cisco-iosxr
+268 │ Active  │  80 │ 1.6.0.rel10-SNAPSHOT │ mdm-adp-cmodel-fm-v2-cisco-iosxr-g2
+269 │ Active  │  80 │ 1.31.0.rel0          │ mdm-device-cisco-iosxr
+273 │ Active  │  80 │ 1.0.0.rel22-SNAPSHOT │ mdm-ami-oam-test-v1
+275 │ Active  │  80 │ 1.0.0.rel3-SNAPSHOT  │ mdm-adp-oam-test-v1-cisco-iosxr
+276 │ Active  │  80 │ 1.7.0.rel2           │ mdm-device-model-comm-netconf-cisco-iosxr-7-3-1-SMU
+277 │ Waiting │  80 │ 1.13.1.rel0          │ mdm-adp-sdn-equipment-1-0-0-cisco-iosxr-netconf
+278 │ Active  │  80 │ 1.7.0.rel4           │ mdm-vz-adp-nsd-evpn-v1-cisco-iosxr-netconf
+279 │ Active  │  80 │ 1.9.0.rel1           │ mdm-adp-sdn-policy-1-0-0-cisco-iosxr-netconf
+280 │ Active  │  80 │ 1.6.1.rel0           │ mdm-vz-adp-nsd-service-1-0-0-cisco-iosxr-netconf
+
+280 │ Active  │  80 │ 1.2.0.rel1         │ mdm-error-formatter
+281 │ Active  │  80 │ 1.8.2.rel1         │ mdm-discovery-cisco-iosxr-netconf
+282 │ Active  │  80 │ 1.1.0.rel3         │ mdm-adaptor-util-netconf-cisco-iosxr
+283 │ Active  │  80 │ 1.20.0.rel6        │ mdm-device-model-comm-netconf-cisco-iosxr
+284 │ Active  │  80 │ 1.7.0.rel1         │ mdm-adp-shared-common-cmodel-equipment
+285 │ Active  │  80 │ 1.9.0.rel8         │ mdm-adp-shared-cisco-cmodel-equipment
+286 │ Waiting │  80 │ 1.10.1.rel0        │ mdm-device-comm-snmp-cisco-iosxr
+287 │ Waiting │  80 │ 1.8.1.rel1         │ mdm-adp-cmodel-equipment-1-0-0-cisco-iosxr-netconf
+288 │ Waiting │  80 │ 1.0.0.rel15        │ mdm-adp-openconfig-lldp-v2-cisco-iosxr
+289 │ Active  │  80 │ 1.11.0.rel5        │ mdm-device-model-comm-netconf-cisco-iosxr-7-3-1
+
+================OAM============
+											 mdm-error-formatter
+244 │ Active  │  80 │ 1.8.1.rel0           │ mdm-discovery-cisco-iosxr-netconf
+245 │ Active  │  80 │ 1.1.0.rel0           │ mdm-adaptor-util-netconf-cisco-iosxr
+246 │ Active  │  80 │ 1.20.0.rel2          │ mdm-device-model-comm-netconf-cisco-iosxr
+247 │ Waiting │  80 │ 1.9.0.rel1           │ mdm-device-comm-snmp-cisco-iosxr
+250 │ Active  │  80 │ 1.6.0.rel6-SNAPSHOT  │ mdm-adp-cmodel-fm-v2-cisco-iosxr-g2
+251 │ Waiting │  80 │ 1.0.0.rel4           │ mdm-adp-openconfig-interfaces-v1-cisco-iosxr
+256 │ Active  │  80 │ 1.31.0.rel0          │ mdm-device-cisco-iosxr
+258 │ Waiting │  80 │ 1.13.1.rel0          │ mdm-adp-sdn-equipment-1-0-0-cisco-iosxr-netconf
+259 │ Active  │  80 │ 1.7.0.rel0           │ mdm-adp-sdn-tunnel-1-0-0-cisco-iosxr
+271 │ Active  │  80 │ 1.17.1.rel0          │ mdm-adp-nsd-service-1-0-0-cisco-iosxr-netconf
+272 │ Active  │  80 │ 1.11.0.rel2          │ mdm-device-model-comm-netconf-cisco-iosxr-7-3-1
+273 │ Active  │  80 │ 1.15.0.rel1          │ mdm-adp-nsd-evpn-v1-cisco-iosxr-netconf
+275 │ Active  │  80 │ 1.0.0.rel20-SNAPSHOT │ mdm-adp-oam-test-v1-cisco-iosxr
+
+
+
+
+<logger name="com.nokia.nsp.mf.server.impl.QueryService" level="DEBUG"/>
+<logger name="com.nokia.nsp.mvm.ami.cmodel.manager" level="DEBUG"/>
+<logger name="com.nokia.nsp.mvm.core.event.bus" level="DEBUG"/>
+
+<logger name="com.nokia.nsp.mf.snmp.imp" level="DEBUG"/>
+<logger name ="com.nokia.nsp.mdm.device.model.yang.impl.SnmpTrapStateUpdater" level="DEBUG"/>
+<logger name ="com.nokia.nsp.mdm.device.model.yang.impl.SnmpTrapTargetManager" level="DEBUG"/>
+
+<logger name ="com.nokia.nsp.mdm.device.juniper.mx.impl.snmp.AbstractSnmpTrapStateUpdater" level="DEBUG"/>
+
+<logger name ="com.nokia.nsp.mdm.util.NetconfPduUtil" level="DEBUG"/>
+<logger name ="com.nokia.nsp.mdm.util.ContextUtil" level="DEBUG"/>
+<logger name="com.nokia.nsp.mf.snmp" level="DEBUG"/>
+<logger name="com.nokia.nsp.mvm.core.event.bus" level="DEBUG"/>
+<logger name="com.nokia.nspos.messaging.kafka.impl.consumer.MessageConsumer" level="DEBUG"/>
+<logger name="com.nokia.nspos.messaging.kafka.impl.producer.MessageProducer" level="DEBUG"/>
+
+
+ 
+ 138.120.234.89  NSC root/mainstreet, snmp : root/admin, grpc
+ 135.121.21.43   XRV admin/Alcatel , grpc same
+ 
+ http://orbw-git.ca.alcatel-lucent.com/dsugar/mdm-adp-oam-v1-cisco
+ 
+ http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-adp-openconfig-lldp-v2-cisco-iosxr/-/merge_requests/8/diffs
+ 
+ 
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NSPQA/OAM_Analysis_For_Cisco_Implementation
+ 
+ http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-adp-shared-cisco-cmodel-equipment/-/commit/b15ac1326c766edef461d5918788acb34971d6b3  Equipment Cahnges
+
+
+http://orbw-git.ca.alcatel-lucent.com/dsugar/mdm-adp-oam-v1-cisco-iosxr
+
+DevicePojoBuilder mepPropertiesBuilder = mepBuilder.childBuilder("mep-properties");
+mepPropertiesBuilder.leafValue("service", aInTest.get("ma-name").toString().split(":")[1]);
+mepPropertiesBuilder.leafValue("mep-id", aInTest.get("source-mep-id"));
+
+Resync Mappers:
+https://nms-confluence.ca.alcatel-lucent.com:8443/pages/viewpage.action?spaceKey=OT&title=Cisco+NCS-5501+CFM+Resync
+
+REQUSET: POST: https://135.249.210.27:8544/nbi-notification/api/v1/notifications/subscriptions
+
+token creation:
+curl -X POST -k -H 'Content-Type: application/json' -H 'Authorization: Basic YWRtaW46Tm9raWFOc3AxIQ==' -i 'https://135.249.221.110/rest-gateway/rest/api/v1/auth/token' --data '{"grant_type": "client_credentials" }'
+
+OAM Demo:
+https://nokianam-my.sharepoint.com/personal/kamel_al_zein_nokia_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkamel%5Fal%5Fzein%5Fnokia%5Fcom%2FDocuments%2FRecordings%2FNCS%20MD%2DOAM%20DMM%20Demo%20and%20Discussion%2D20220906%5F093518%2DMeeting%20Recording%2Emp4&parent=%2Fpersonal%2Fkamel%5Fal%5Fzein%5Fnokia%5Fcom%2FDocuments%2FRecordings&ga=1
+
+http://orbw-git.ca.alcatel-lucent.com/dsugar/mdm-adp-oam-v1-cisco-iosxr
+
+https://www.getpostman.com/collections/8cc192bc9cc575f57211
+
+http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-config-adp-cisco-iosxr
+
+https://nokia.sharepoint.com/sites/NSM-PM/R&D-Demo-Videos
+
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NSPQA/ASR9k+OAM+adaptor+analysis
+
+135.254.152.39
+root/M@1nstreet
+/root/suniltool/yang_diff_tool
+./yangdiff.py completepath1 completepath2
+
+builder13:
+/opt/nsp/mediation/karaf/data/cache/bundle13/data
+
+OAM Adaptors:
+244 │ Active  │  80 │ 1.23.0.rel2-SNAPSHOT │ mdm-device-model-comm-netconf-cisco-iosxr
+245 │ Active  │  80 │ 1.9.2.rel1           │ mdm-discovery-cisco
+246 │ Active  │  80 │ 2.2.0.rel12-SNAPSHOT │ mdm-adp-mdc-cisco-iosxr-6-4-2
+247 │ Waiting │  80 │ 1.0.0.rel4-SNAPSHOT  │ mdm-adp-oam-v1-cisco-iosxr
+248 │ Waiting │  80 │ 1.11.0.rel0          │ mdm-device-comm-snmp-cisco-iosxr
+249 │ Active  │  80 │ 1.32.0.rel8-SNAPSHOT │ mdm-device-cisco-iosxr
+
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/22.11.0-rel/generated/NSP/cloudNative/NSP_cloudNative.yaml
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/23.4.0-rel/generated/NSP/cloudNative/NSP_cloudNative.yaml
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/23.4.0-rel/generated/NSP/cloudNative/NSP_cloudNative.yaml
+
+python mv.py --user=kvadapal --projectName=mv_mdm --cloud=nspblr
+xrv9k-fullk9-x.vga-7.7.2
+
+Bump version:
+=============
+http://orbw-jenkins.ca.alcatel-lucent.com:8080/view/Developer%20Tools/job/Developer%20Tools/job/create-release-branch/
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+create+a+release+branch
+
+https://www.youtube.com/watch?v=UB3DE5Bgfx4
+https://www.youtube.com/watch?v=nOcMzCJkANo
+
+Juniper
+=======
+
+
+297 │ Active  │  80 │ 1.4.0.rel4           │ mdm-device-juniper
+307 │ Active  │  80 │ 1.5.1.rel0           │ mdm-discovery-juniper
+308 │ Active  │  80 │ 1.1.4.rel0           │ mdm-adp-shared-juniper-cmodel-equipment
+309 │ Waiting │  80 │ 1.0.0.rel8           │ mdm-adp-openconfig-lldp-v2-juniper
+314 │ Active  │  80 │ 1.7.0.rel0           │ mdm-adp-cmodel-fm-v2-juniper
+315 │ Waiting │  80 │ 3.1.0.rel1           │ mdm-adp-cmodel-equipment-1-0-0-juniper
+356 │ Active  │  80 │ 1.0.1.rel1-SNAPSHOT  │ mdm-device-model-juniper-mx-19-4-r1
+358 │ Waiting │  80 │ 1.5.0.rel0           │ mdm-device-comm-snmp-juniper-mx
+360 │ Active  │  80 │ 1.0.0.rel3-SNAPSHOT  │ mdm-device-model-juniper-mx-21-4-r1
+361 │ Waiting │  80 │ 1.15.0.rel4-SNAPSHOT │ mdm-device-comm-netconf-juniper-mx
+
+
+
+
+nsp@mdm-server-0()> full-resync 10.10.0.3
+nsp@mdm-server-0()> nokia:full-resync 10.10.0.3
+nsp@mdm-server-0()> readStore 10.10.0.3
+
+git config core.autocrlf true
+
+[20-01 10:01] Manjunath Ramigani (EXT-Nokia)
+<?xml version="1.0" encoding="utf-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="10">
+<get xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+        xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <filter nc:type="subtree">
+    <lldp xmlns="http://openconfig.net/yang/lldp">
+      <interfaces>
+        <interface>
+          <neighbors>
+            <neighbor/>
+          </neighbors>
+        </interface>
+      </interfaces>
+    </lldp>
+  </filter>
+</get>
+</rpc>
+
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="10">
+<get xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+        xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <filter nc:type="subtree">
+    <lldp xmlns="http://openconfig.net/yang/lldp">
+      <interfaces>
+        <interface>          
+        </interface>
+      </interfaces>
+    </lldp>
+  </filter>
+</get>
+</rpc>
+
+[20-01 10:02] Manjunath Ramigani (EXT-Nokia)
+ssh vrnetlab@10.10.0.2 -p 830 -s netconf
+
+tcpdump -i ens3 port 162
+
+sysctl net.ipv4.conf.all.rp_filter=0
+sysctl net.ipv4.conf.ens3.rp_filter=0
+
+135.121.100.179
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/~kdhillon/MV+Implementation+details
+
+
+135.254.152.42:1 for root/M@1nstreet
+135.254.152.42:2 for naveen/Nokia@1234
+
+Config load:
+configur
+load gnmi.cfg
+commit replace
+
+KAfka=====
+
+/opt/bitnami/kafka/bin
+export JMX_PORT=5560
+./kafka-console-consumer.sh --bootstrap-server 135.249.220.30:9192 --topic ns-eg-58d5bd74-ef77-4ec8-b6a0-f2716bba22e6 --consumer.config ../config/consumer.properties --from-beginning
+
+==============================
+Please find below the Singtel Edu Lab NSP IP details for R&D’s perusal, 
+172.30.21.115 nsd-1172.30.21.114 
+nfmp-1172.30.21.105 mdm-1172.30.21.126 
+auxdb-1172.30.21.117 
+test-VM The login credentials are as below;
+Username: rootPassword: root123 Kindly connect to Singtel VPN (access provided by Anthony) and then try logging into these NSP system IPs. Let us know if R&D team faces any issues whatsoever with this access. Cisco to Cisco  : ILAB-SC-P1-B HundredGigE0/0/0/35 to ILAB-SC-P2-B HundredGigE0/0/0/35Cisco  to Nokia : ILAB-SC-P2-B HundredGigE0/0/0/34 to ILAB-SC-P2-A 1/1/c7Note:- do not change configurations of any other ports. 172.16.32.21/27172.16.32.22/27 Username: nokia-mdm-karthikkumarPassword: pBNkM3Md!%
+
+ps -ef | grep vnc
+kill -9 2060
+vncserver
+============
+Docupdate:
+Feature implementation details need to be updated.
+
+
+OAM Resync MEP files:
+=====================
+md-oam-mv-reforences
+STATS
+=====
+mdm-telemetry-mapping-cisco-iosxr
+
+/nsp-equipment:network/network-element[ne-id='135.249.212.248']
+/nsp-equipment:network/network-element[ne-id='38.120.234.89']
+
+gnmi-debug subscriptionIds
+gnmi-debug gnmiSubscriptionDetails
+
+
+mdm-adp-mdc-cisco-iosxr-6-4-2-2.2.0-rel.14-SNAPSHOT.zip
+  mdm-device-model-cisco-iosxr-v7-1.0.0-rel.5-SNAPSHOT.zip
+  mdm-adp-oam-v1-cisco-iosxr-1.0.0-rel.8-SNAPSHOT.zip
+  mdm-discovery-cisco-1.12.0-rel.0.zip
+  iosXr-netconf-23.4.0-rel.509.zip
+  mdm-device-model-comm-netconf-cisco-iosxr-1.26.1-rel.4-SNAPSHOT.zip
+  mdm-telemetry-mapping-cisco-iosxr-1.12.0-rel.17-SNAPSHOT.zip
+  iosxr-7-1-1-23.4.0-rel.509.zip
+  mdm-device-comm-gnmi-cisco-iosxr-1.4.0-rel.14-SNAPSHOT.zip
+  mdm-device-cisco-iosxr-1.33.0-rel.1.zip
+  iosxr-common-23.4.0-rel.509.zip
+  iosXr_mdc-23.4.0-rel.509.zip

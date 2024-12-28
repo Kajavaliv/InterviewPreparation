@@ -1,0 +1,78 @@
+String str="swiss";
+Map<Character, Long>  map = str.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+Character c=  map.entrySet().stream().filter(e->e.getValue()==1).findFirst().get().getKey();
+System.out.println(c);
+=========================
+ List<Employee> empList = Arrays.asList(
+        		  new Employee(1, "manju",25, 3000),
+        		  new Employee(2, "payala",26, 4000),
+        		  new Employee(3, "manjupayala",27, 5000),
+        		  new Employee(4, "cherry",29, 6000),
+        		  new Employee(4, "cherrish",30, 7000));
+        
+ empList.stream().filter(e->e.getSal()>5000).map(e->e.getName()).collect(Collectors.toList()).forEach(System.out::println);
+
+==============================
+Find out the duplicate element from the list using stream api
+int[] num = new int[]{4,2,3,6,7,9,2,4};
+
+==================================
+String[] dictionary = new String[]{"cat","bat","rat"};
+String sentence = "the cattle was rattled by the battery";                 
+String output = "the cat was rat by the bat";
+================================
+ List<Employee> employees = Arrays.asList(
+				   new Employee(1, "John", 5000.0, "HR"),
+				   new Employee(2, "Jane", 6000.0, "Finance"),
+				   new Employee(3, "Jack", 7000.0, "HR"),
+				   new Employee(4, "Jill", 8000.0, "Finance"),
+				   new Employee(5, "Joe", 9000.0, "IT"));
+		  
+		  Map<String, Double> emp= employees.stream().collect(Collectors.groupingBy(Employee::getDeparment,Collectors.averagingDouble(Employee::getSalary)));
+		  emp.forEach((dept,sal)->{System.out.println("dept: "+dept+" sal "+sal);});
+=======================================
+String str = "java is an progrmming lanugage";
+		
+		 Map<Character, Long> map= str.chars().mapToObj(c->(char)c).filter(c->!Character.isWhitespace(c)).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		 System.out.println(map);
+		  map.entrySet().stream().filter(e->(e.getValue()>1)).collect(Collectors.toList()).forEach(e->System.out.print(e+" "));
+=======================================
+ String str = "java is an progrmming lanugage";
+		
+		 Map<Character, Long> map= str.chars().mapToObj(c->(char)c).filter(c->!Character.isWhitespace(c)).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		 System.out.println(map);
+		 map.entrySet().stream().filter(e->(e.getValue()>1)).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)).forEach((k,v)->System.out.println(k +" : "+v)); 
+		
+======================================
+
+List<Integer> list  = Arrays.asList(20,110,30,10,111,600,700);
+        list.stream().filter(e->String.valueOf(e).startsWith("1")).toList();
+========================================
+
+//find duplicate elements in a list using stream
+		
+		List<Integer> list= Arrays.asList(22,10,40,50,40,60,60,70,90,22,40);
+		 
+		Map<Integer, Long> map =list.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		map.entrySet().stream().filter(e->e.getValue()>1).map(e->e.getKey()).forEach(System.out::println);
+====================================================
+    List<List<String>> nestedList = Arrays.asList(Arrays.asList("A", "B", "C"),Arrays.asList("E", "F", "H"));
+    Stream<List<String>>  stream=nestedList.stream();	      
+    List<String> list=   stream.flatMap(List::stream).collect(Collectors.toList());
+    System.out.println(list);
+   list.forEach(System.out::println);
+==========================================
+ String input = "ABBBCDDEFEFGGH";
+        
+        // Find characters that occur more than once
+        List<Character> result = input.chars() // Convert the string to an IntStream
+            .mapToObj(c -> (char) c) // Convert int to Character
+            .collect(Collectors.groupingBy(c -> c, Collectors.counting())) // Group by character and count
+            .entrySet().stream() // Create a stream of the entry set
+            .filter(entry -> entry.getValue() > 1) // Filter entries with count > 1
+            .map(Map.Entry::getKey) // Get the character
+            .collect(Collectors.toList()); // Collect results to a List
+
+        // Print the result
+        System.out.println(result); // Output: [B, D, G]\
+================================

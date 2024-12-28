@@ -1,0 +1,21 @@
+Place application-test.yml in src/test/resources/.
+Activate test profile:
+
+Specify the test profile in your tests by adding @ActiveProfiles("test") to your test class
+
+@ActiveProfiles("test")
+@SpringBootTest
+public class MyServiceTest {
+
+    @Test
+    public void testSomething() {
+        // Test logic here
+    }
+}
+=====================
+Spring Boot Actuator 
+=====================
+is a sub-project of Spring Boot that provides production-ready features for monitoring and managing applications.
+
+ It includes a set of endpoints that can be used to: Gather metrics, Check the health of the application, Perform management tasks, Audit the application, and Export metrics data to third-party monitoring tools
+==============================

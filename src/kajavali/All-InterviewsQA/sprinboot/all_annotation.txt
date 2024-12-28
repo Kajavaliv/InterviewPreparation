@@ -1,0 +1,165 @@
+1. Core Annotations
+======================
+@SpringBootApplication: Main annotation to bootstrap a Spring Boot application.
+@Configuration: Marks a class as a source of bean definitions.
+@ComponentScan: Configures component scanning directives for Spring to find beans.
+@Bean: Declares a Spring-managed bean in a configuration class.
+@Component: Generic stereotype annotation for any Spring-managed component (includes @Service, @Repository, @Controller).
+@Service: Specialization of @Component used for service-layer beans.
+@Repository: Specialization of @Component for persistence-layer beans.
+@EnableAutoConfiguration: Enables Spring Boot’s auto-configuration feature.
+@Import: Allows importing other configuration classes.
+======================
+2. Dependency Injection
+=======================
+@Autowired: Automatically injects a bean into a class.
+@Qualifier: Used alongside @Autowired to resolve bean injection ambiguities.
+@Primary: Marks a bean as the primary candidate when multiple beans are of the same type.
+@Lazy: Marks a bean to be initialized lazily (i.e., on first use).
+===================
+3. Web Annotations
+==================
+@RestController: Combines @Controller and @ResponseBody to create RESTful web services.
+@Controller: Marks a class as an MVC controller.
+@RequestMapping: Maps HTTP requests to handler methods in MVC or REST controllers.
+@GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PatchMapping: Specialized shortcuts for HTTP methods (GET, POST, PUT, DELETE, PATCH).
+@ResponseBody: Binds the return value of a method directly to the HTTP response body.
+@RequestBody: Binds the HTTP request body to a method parameter (usually used in REST controllers).
+@RequestParam: Binds query parameters in the URL to method parameters.
+@PathVariable: Binds URL path variables to method parameters.
+@CrossOrigin: Enables Cross-Origin Resource Sharing (CORS) support for REST services.
+@ModelAttribute: Binds a method parameter or return value to a model attribute in MVC.
+===============================
+4. Configuration Properties
+==============================
+@Value: Injects values from properties files or environment variables into fields, methods, or constructors.
+@ConfigurationProperties: Binds external properties (from .properties or .yaml files) to Java objects.
+5. Database and Transactions
+@Transactional: Manages transactions around method execution.
+@EnableTransactionManagement: Enables Spring’s annotation-driven transaction management.
+@Entity: Specifies that a class is an entity and is mapped to a database table (from JPA).
+@Id: Specifies the primary key of an entity (from JPA).
+@GeneratedValue: Provides the generation strategy for primary key values (from JPA).
+============================
+6. Spring Security
+============================
+@EnableWebSecurity: Enables Spring Security’s web security features.
+@Secured: Specifies security roles required for method invocation.
+@PreAuthorize: Allows method-level security based on expressions.
+@RolesAllowed: Specifies roles allowed for method execution.
+@WithMockUser: Used in tests to simulate a logged-in user.
+==============================================
+7. Scheduling and Asynchronous Processing
+==============================================
+@EnableScheduling: Enables Spring’s scheduling functionality.
+@Scheduled: Specifies methods that should be invoked periodically (cron, fixed rate, etc.).
+@EnableAsync: Enables asynchronous method execution.
+@Async: Marks a method to run asynchronously.
+==================================
+8. Spring Boot Testing Annotations
+=================================
+@SpringBootTest: Used for integration testing in Spring Boot applications.
+@WebMvcTest: Used for testing web layer components, like controllers.
+@DataJpaTest: Used for testing JPA repositories.
+@MockBean: Replaces a bean in the Spring context with a mock during testing.
+@SpyBean: Injects a spy bean into the Spring context during testing.
+@TestConfiguration: A class-level annotation used to define beans for testing purposes.
+=================================
+9. Conditional Beans and Profiles
+=================================
+@Profile: Configures beans to be available only in specific environments (profiles).
+@Conditional: Configures a bean to be instantiated only if certain conditions are met.
+@ConditionalOnProperty: Creates a bean only if a specific property is present in the environment.
+@ConditionalOnClass: Creates a bean only if a specific class is on the classpath.
+@ConditionalOnMissingBean: Creates a bean only if a specified bean does not already exist.
+===========================================
+10. Spring AOP (Aspect-Oriented Programming)
+===========================================
+@Aspect: Marks a class as an aspect in Spring AOP.
+@Before, @After, @Around, @AfterReturning, @AfterThrowing: Defines advice types for methods in AOP.
+@Pointcut: Declares reusable expressions for selecting join points in AOP.
+=========================
+11. Caching Annotations
+=======================
+@EnableCaching: Enables Spring's annotation-driven cache management.
+@Cacheable: Indicates that the result of a method should be cached.
+@CachePut: Updates or inserts the cache with the method’s result.
+@CacheEvict: Evicts cache entries.
+
+12. Event Handling
+==================
+@EventListener: Registers a method as an event listener for Spring’s event system.
+@AsyncEventListener: Handles events asynchronously.
+==============================
+
+JPA Annatation
+=====================
+@Entity: Marks a class as a persistent JPA entity.
+@Table: Specifies the table name for an entity.
+@MappedSuperclass: Marks a class whose fields should be inherited by other entities but is not itself an entity.
+@Embeddable: Specifies that a class is intended for embedding in other entities.
+@Embedded: Embeds another object into the entity.
+====================================
+2. Field/Property-Level Annotations
+==================================
+@Id: Marks a field as the primary key.
+@GeneratedValue: Specifies how the primary key should be generated (e.g., AUTO, IDENTITY, SEQUENCE, TABLE).
+@Column: Maps a field to a database column.
+@Basic: Defines the fetch type for a field (default, can be LAZY or EAGER).
+@Lob: Indicates a large object (LOB), used for BLOB (binary) or CLOB (character large object).
+@Transient: Specifies that a field should not be persisted in the database.
+@Temporal: Specifies the date/time type for a java.util.Date or java.util.Calendar field (e.g., DATE, TIME, TIMESTAMP).
+@Enumerated: Specifies how an enum should be persisted (e.g., ORDINAL or STRING).
+@ElementCollection: Defines a collection of basic types or embeddable objects.
+============================
+3. Relationship Annotations
+==========================
+@OneToOne: Defines a one-to-one relationship between two entities.
+@OneToMany: Defines a one-to-many relationship (one parent entity has many child entities).
+@ManyToOne: Defines a many-to-one relationship (many child entities relate to one parent).
+@ManyToMany: Defines a many-to-many relationship between entities.
+@JoinColumn: Specifies the foreign key column for a relationship.
+@JoinTable: Specifies the table for the join in many-to-many relationships.
+@Cascade: Specifies cascading operations (can use CascadeType.PERSIST, REMOVE, etc.).
+=============================
+4. Fetching Annotations
+=========================
+@FetchType.EAGER: Specifies that related entities should be fetched immediately (default for many-to-one and one-to-one).
+@FetchType.LAZY: Specifies that related entities should be fetched lazily (on-demand).
+=======================
+5. Inheritance Annotations
+======================
+@Inheritance: Specifies the inheritance strategy (e.g., SINGLE_TABLE, TABLE_PER_CLASS, JOINED).
+@DiscriminatorColumn: Specifies the column used for discriminating between entity types in single-table inheritance.
+@DiscriminatorValue: Specifies the value used to identify an entity in a single-table inheritance strategy.
+6. Versioning and Locking Annotations
+@Version: Used for optimistic locking and automatic versioning control.
+=================
+7. Lifecycle Annotations
+======================
+@PrePersist: Marks a method to be executed before an entity is persisted (saved).
+@PostPersist: Marks a method to be executed after an entity is persisted.
+@PreUpdate: Marks a method to be executed before an entity is updated.
+@PostUpdate: Marks a method to be executed after an entity is updated.
+@PreRemove: Marks a method to be executed before an entity is removed.
+@PostRemove: Marks a method to be executed after an entity is removed.
+@PostLoad: Marks a method to be executed after an entity is loaded.
+==========================
+8. Miscellaneous Annotations
+=======================
+@Access: Specifies the access type (FIELD or PROPERTY) for JPA entities (whether to access fields directly or through getter/setter methods).
+@AttributeOverride: Allows you to override a mapping of an embeddable class's attributes in an entity.
+@AssociationOverride: Overrides the mapping of a relationship defined in an embeddable class.
+@NamedQuery: Defines a static named JPQL (Java Persistence Query Language) query.
+@NamedNativeQuery: Defines a static named native SQL query.
+@SqlResultSetMapping: Maps SQL result sets to entities.
+@Query: Used to define custom JPQL or SQL queries in the repository layer.
+@OrderBy: Specifies the ordering of a collection of entities or elements.
+@OrderColumn: Used to specify the column used for ordering list-based collections.
+=====================
+Common JPA Generation Strategies
+====================
+@GeneratedValue(strategy = GenerationType.IDENTITY): Primary key is auto-incremented by the database.
+@GeneratedValue(strategy = GenerationType.SEQUENCE): Primary key is generated by a database sequence.
+@GeneratedValue(strategy = GenerationType.TABLE): Primary key is generated using a table to maintain sequence values.
+@GeneratedValue(strategy = GenerationType.AUTO): Let the persistence provider pick the best strategy.

@@ -1,0 +1,154 @@
+---Views:
+VIew is nothing but a select statement whenever we executing a view internally select statement will be executed. There is no usage of performance by using views but we have 3 types of advantages by using views.
+
+syntax:
+create or replace view [force | noforce] view_name as(select statement....) with [check option|read only] constraint constraint_name;
+
+1. Security: 
+To hide the sensitive information. for example we have a patient table the patient table contains patient normal information(name,age,gender,etc..) and sensitive information(patient disease details..).
+So, now can anyone ask to see the normaal information at the i need to create a view on normal information.
+ex: 
+create view v1_emp as(select emp_id,emp_name from emp);
+
+grant select p_id,p_disease from patient_tab  on v_pat to srinu;--> grant allows gives permission to only statements and objects but not query results(column).)
+
+2. Maintainability:
+for example i am using a same select statment multiple places in my logic then after i need to do some modification on the select statement. So, i need to do modify the same select statement whereever i am using.
+So, to reduce this process i am creating a view on that select statement then i am using the view in my logic whereever we want. So here also i need to do modifications on that view here i am not distriub the 
+logic i a directly open the view then modify the select statement So, what are the changes are modified on that view same changes are reflected in my logic whereever i am using the same view.
+
+ex:
+
+set SERVEROUTPUT on 
+declare
+begin
+for rec in( select * from emp e join dep d on e.dep_no=d.dep_id where emp_id=1) ---for example using this select statement  multiple places 
+loop
+dbms_output.put_line(rec.emp_name);
+end loop;
+
+
+for rec1 in( select * from emp e join dep d on e.dep_no=d.dep_id where emp_id=1)  
+loop
+dbms_output.put_line(rec1.emp_name);
+end loop;
+
+end;
+
+create or replace view v_fun as(select e.*,d.* from emp e join dep d on e.dep_no=d.dep_id where emp_id=1);
+
+
+set SERVEROUTPUT on 
+declare
+begin
+for rec in( select *  from v_fun) ---using view 
+loop
+dbms_output.put_line(rec.emp_name);
+end loop;
+
+for rec1 in( select *  from v_fun) ---using view 
+loop
+dbms_output.put_line(rec1.emp_name);
+end loop;
+
+end;
+
+here now i need to modify the view.
+
+create or replace view v_fun as(select e.emp_name,emp_id from emp e join dep d on e.dep_no=d.dep_id where emp_id=1);
+
+3. Readability:
+for example in my logic i am using the same select statement  but the select statement have 5 or 6 lines  to reduce these lines of code i am creating a view on the select statement.
+
+ex:
+set SERVEROUTPUT on 
+declare
+begin
+for rec in( select * from emp e join dep d on e.dep_no=d.dep_id where emp_id=1) ---for example this select statement have 5 or 6 line 
+loop
+dbms_output.put_line(rec.emp_name);
+end loop;
+end;
+
+create or replace view v_fun as(select e.*,d.* from emp e join dep d on e.dep_no=d.dep_id where emp_id=1);
+
+
+set SERVEROUTPUT on 
+declare
+begin
+for rec in( select *  from v_fun) ---using view 
+loop
+dbms_output.put_line(rec.emp_name);
+end loop;
+end;
+
+
+Types of views:
+1. Simple views: To create a view on one table. we can perform DML operation on simple views.
+
+ex: creating a view on emp table.
+create or replace view v2_emp as(select * from emp);
+
+select * from v2_emp;
+
+now i am trying to insert a record on v2_emp view.
+
+insert into v2_emp values(12,'abc',50,5);
+
+what are the changes made on simple view those changes reflects on master table also.
+select * from emp;
+
+
+2. Complex views: create  views on multiple tables means join queries. we cannot perform dml operations on complex views.
+
+ex: create a view on emp, dep tables.
+create or replace view v3_emp_dep as (select e.*,d.* from emp e join dep d on e.dep_no=d.dep_id);
+
+select * from v3_emp_dep;
+
+now i am trying to insert records on v3_emp_dep view.
+insert into v3_emp_dep values(13,'abc',50,5,50,'IT');
+
+
+--------------------------------------------------------------------------
+view with check option: we can perform dml operations on simple view on that we need to put check condition.
+ex:
+create or replace view v1_chk_cons as(select * from emp where dep_no=10) with check option constraint dep_chk;
+ex:
+insert into v1_chk_cons values(12,'xyz',20,1);  --check constraints violation.
+
+view with read only: we cannot perform dml operation on simple views also.
+ex:
+create  or replace view v_read_only as(select * from emp) with read only;
+insert into v_read_only values(12,'xyz',20,1);  
+
+---------------------------------------------------------
+
+Force view: for example if the table is not in database eventhough we need to create a view.
+
+ex:
+create or replace force view v_force  as(select * from test_1 a join test_2 b on a.id=b.id); 
+create or replace force view v_force  as(select * from test_3);
+
+---------------------------------------
+
+ Notes:
+ --here once i drop the t3 tables. view should be invalid state.
+ create or replace view v_emp_a as(select * from t3); 
+ select * from v_emp_a;
+ drop table t3;
+
+---- we can not create index on views.
+select * from v_fun;
+create index idx_v_fun on v_fun(emp_id);
+
+-------------------------------------------
+
+select * from all_views;  --- to see the views.
+
+drop view v_emp_a; --drop the view
+
+-------------------------------
+
+or replace: creating any object like 'create or replace'->or replace takes any changes on the exisitng object 
+view->internally select statement executed.

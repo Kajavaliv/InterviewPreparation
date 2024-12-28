@@ -1,0 +1,12 @@
+What are the different types of threads in Java?
+------------------------------------
+1. user thread and daemon thread
+
+What is the difference between threadpoolexecutor and ExecutorService?
+---------------------------------------------------
+A thread pool is a collection of threads that can be used to perform a set of tasks concurrently.
+ The Executor framework provides an ExecutorService interface that defines a set of methods for managing the lifecycle of threads in a thread pool.
+------------
+How many threads are in a thread pool?
+-----------------------
+By default, the number of threads that can be created in the thread pool is about 500. Each thread uses the default stack size and runs at the default priority.

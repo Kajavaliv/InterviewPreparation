@@ -1,0 +1,54 @@
+1. Password which better of char() or string
+2. best practices of rest api.
+3. cache techies frm springboot.
+4. what is autowire? 
+5. // input = aaabbcaadddeeee
+		// output = a3b2c1a2d3e4
+6.create list of emp names , having salary greateher than 10000
+7. what is spring boot strater
+8. what is spring boot actuator
+9. what is spring boot initializr
+10. how to add file to spring boot test cases or application.xml to you
+11 . what is completeFuture in executers
+12 . differenct copyArray and concureenthashmap
+13. optional.of vs optional.isnull
+14.  List<Employee> employees = Arrays.asList(n  new Employee(1, "John", 5000.0, "HR"),   new Employee(2, "Jane", 6000.0, "Finance"),   new Employee(3, "Jack", 7000.0, "HR"),   new Employee(4, "Jill", 8000.0, "Finance"),   new Employee(5, "Joe", 9000.0, "IT"));
+average of each deperatment salary?
+
+15 time compelicty in hashmap for get and put?
+16 Longest Subarray of 1's After Deleting One Element?
+17. List<Integer> list =Arrays.asList(1,2,2,2,3,3,5,5,5,5); second higest repeat in list?
+18. what is RestTemplate?
+
+19 resttemplate vs webclient?
+20. RestTemplate vs WebClient vs HttpClient vs figclient?
+21. resttemplate method like exchange() 
+22. what is hash collision?
+23. what implementation of hashmap or how yo do own?
+24. how to implemented arraylist?
+25. Arrays.asList("prasad","kumar"); op:{"P=prasad","K=Kumar"}
+26. 1st one conation in list 100,200,111
+27. composite
+28  primary and unioun
+29. trunicate and delete
+Write SQL query to find out count of employees with duplicate names from each department with name count
+Employee 
+id,name,dept
+1  xxx ,hr
+2  yyy  it
+3  zzz  hr
+4  xxx  hr
+
+30. what is compiste key?
+31. how you have lock level in db and java when while insert into you threads
+32. in microservice one service go what will happen transaction into all service ?
+33. how handle feignclient errors?
+32. how to scale pods?
+33 . how to perforamce to get data from mogdb
+34. what is Normalization ?
+String input = "ABBBCDDEFEFGGH";
+Answer is B , D and G
+
+
+
+select * from Employee having count(name)>1 group by dept;

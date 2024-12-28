@@ -1,0 +1,30 @@
+	 int x[] = {6,5,2,8,9,4};
+		 int size = x.length;		 
+		 int minindex=-1;
+		 System.out.println("before Sorting");
+		 for(int num:x) {
+			 System.out.print(num+" ");
+		 }
+		 System.out.println();
+		 
+		 for(int i=0;i<size-1;i++) {
+			 minindex=i;
+			 for(int j=i+1;j<size;j++) {
+				if( x[minindex]>x[j]) {
+					minindex=j;
+				}	
+			}
+			 int temp = x[minindex];
+				x[minindex] = x[i];
+				x[i]=temp;
+				
+				/*
+				 * System.out.println(); for(int num:x) { System.out.print(num+" "); }
+				 */
+			 }	
+		 
+		 System.out.println("after Sorting");
+		 for(int num:x) {
+			 System.out.print(num+" ");
+		 }
+		 

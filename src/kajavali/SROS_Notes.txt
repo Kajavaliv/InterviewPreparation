@@ -1,0 +1,808 @@
+KT Recordings SROS
+==================
+https://isupport.ltimindtree.com/sp_irequest?id=itclinicappointment
+https://digital.ltimindtree.com/talent-marketplace/
+https://nsnsi.service-now.com/ess?id=sc_cat_item&sys_id=9a9ce1594fe96340c3d1cab18110c774&returnPage=request_services
+
+
+https://digitalprofile.prismforce.com/home
+SROMR/E/2024/07087
+135.228.149.247
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/WSC/Adaptor+Basics
+ 
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/WSC/How+to+Discover+a+SROS+Node+in+MDM
+ 
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/WSC/Discover+a+classic+mode+SR+in+MDM
+ 
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/WSC/Cleaning+up+and+installing+adaptors
+ 
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+set+up+gRPC+on+a+SROS+vSIM+for+NSP+Telemetry+testing
+
+https://confluence.ext.net.nokia.com/display/WSC/New+Joinees+Training
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/RCONF/Device+Store+Application
+
+https://phoenixnap.com/kb/how-to-install-vagrant-on-centos-7
+
+https://confluence.ext.net.nokia.com/display/WSC/Network+Egress+and+Ingress+Accounting+policies
+
+135.249.213.206
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/23.11.0-rel/generated/NSP/cloudNative/NSP_cloudNative.yaml
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/24.0.0-rel/generated/NSP/cloudNative/NSP_cloudNative.yaml
+
+VSIM
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/raw/master/VSIM/vsim.yaml
+
+24.0.0-dev-nspf-316978-cn-accounting-functionality-new.5
+
+new deployer version : nsp-deployer-24.0.0-dev-nspf-316978-cn-accounting-functionality-new.7.tar.gz
+
+networkInfrastructureManagement-basicManagement,platformMdm, platformSdn,networkInfrastructureManagement-accountingTelemetry
+
+24.0.0-dev-nspf-316978-cn-accounting-functionality-new/cn/nsp-deployer/nsp-deployer-24.0.0-dev-nspf-316978-cn-accounting-functionality-new.11.tar.gz
+
+24.0.0-dev-nspf-316978-cn-accounting-functionality-new/cn/nsp-deployer/nsp-deployer-24.0.0-dev-nspf-316978-cn-accounting-functionality-new.41.tar.gz
+
+
+
+http://orbw-git.ca.alcatel-lucent.com/pnt/pnt-nspcloud-templates/-/raw/23.11.0-rel/generated/NSP/cloudNative/2xClustered_NSP_cloudNative_sdn.yaml
+
+platformMdm, platformSdn,serviceActivationAndConfiguration-originalServiceFulfillment
+
+platformAssurance,platformMdm,networkInfrastructureManagement-basicManagement, networkInfrastructureManagement-gNMIonChange,serviceActivationAndConfiguration-originalServiceFulfillment,platform-baseServices
+
+platformMdm,serviceActivationAndConfiguration-originalServiceFulfillment
+
+networkInfrastructureManagement-basicManagement,platformMdm, platformSdn,serviceActivationAndConfiguration-originalServiceFulfillment
+
+networkInfrastructureManagement-basicManagement,platformMdm, platformSdn,networkInfrastructureManagement-accountingTelemetry
+
+networkInfrastructureManagement-basicManagement,platformMdm, platformAssurance,platformSdn,platform-baseServices,serviceAssurance
+
+networkInfrastructureManagement-basicManagement,platformMdm,networkInfrastructureManagement-telemetry,platformSdn,serviceActivationAndConfiguration-originalServiceFulfillment
+
+networkInfrastructureManagement-basicManagement,platformMdm,networkInfrastructureManagement-telemetry,platformSdn,platform-deviceStore,platform-baseServices
+networkInfrastructureManagement-basicManagement,platformMdm,networkInfrastructureManagement-telemetry, platformAssurance,platformSdn,platform-baseServices,serviceAssurance,platform-deviceStore
+
+https://jiradc2.ext.net.nokia.com/browse/NSPF-424941
+https://jiradc2.ext.net.nokia.com/browse/NSPF-421966
+
+DevStore:
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/RCONF/MDM+Console+Client+For+Device+Store
+
+================================
+135.250.74.55 sprasads
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+135.245.48.34 proxy.lbs.alcatel-lucent.com
+135.121.17.21 orbw-artifactory.ca.alcatel-lucent.com
+##########Assigned to Sivaprasad s ###############
+#### Developer Workstation ####
+================================
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/NMVM/How+to+install+vagrant+for+NSP+MDM
+
+sros-23-10-r1-22.6.0-rel.1189_v4.zip
+
+135.254.152.42 kvadapal
+
+CN Telementry
+=============
+
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/WSC/CN+Telemetry+on+SROS
+https://confluence.ext.net.nokia.com/display/WSC/CN+Telemetry+on+SROS
+
+http://orbw-git.ca.alcatel-lucent.com/aa/aa-telemetry-cr-ct-sros
+http://orbw-git.ca.alcatel-lucent.com/aa/aa-telemetry-cr-va-sros
+https://www.programiz.com/javascript/online-compiler/
+
+data = {
+    // deviceKey: "/state/lag[lag-name='lag-Calgary-CE_West']",
+    deviceKey: "/state/lag[lag-index='lag-1']",
+    neId: "92.168.98.97",
+    neType: "SR-7750-classic"
+};
+
+var LAG_ID_PATTERN = new RegExp(/^'lag-([0-9]+)'$/); 
+var NETWORK_ELEMENT_TEMPLATE = 'fdn:realm:$realmId:network:$neId'; 
+var LAG_TEMPLATE = NETWORK_ELEMENT_TEMPLATE + ':lag:interface-$interfaceId'; 
+var NFMP_REALM = 'sam'; 
+
+console.log(func())
+
+function func()
+{   
+
+if (data['deviceKey'].includes('state/lag')) { 
+    var llagIndex = data['deviceKey'].substring(data['deviceKey'].indexOf('[lag-index') + 1, data['deviceKey'].indexOf(']')); 
+    var lagIndex = llagIndex.split('=')[1]; 
+    lMatcher = lagIndex.match(LAG_ID_PATTERN); 
+    if (lagIndex != null) { 
+        return LAG_TEMPLATE.replace('$realmId', NFMP_REALM).replace('$neId', data['neId']).replace('$interfaceId', lMatcher[1]); 
+    } 
+}
+}
+
+===========================
+// to get cn telemetry pods
+[root@node-sanket-k8sc-node1-1 ~]# kubectl get pods -A | grep tlm
+nsp-psa-restricted   tlm-gnmi-collector-0                                          1/1     Running     0                10d
+nsp-psa-restricted   tlm-kafka-output-77bb464b69-6w2sr                             1/1     Running     0                10d
+nsp-psa-restricted   tlm-nats-0                                                    3/3     Running     0                10d
+nsp-psa-restricted   tlm-nats-1                                                    3/3     Running     0                10d
+nsp-psa-restricted   tlm-nats-2                                                    3/3     Running     0                10d
+nsp-psa-restricted   tlm-nats-box-5c6d54f6d5-bfz92                                 1/1     Running     0                8d
+nsp-psa-restricted   tlm-pg-output-77454dc55c-8lq7r                                1/1     Running     0                10d
+nsp-psa-restricted   tlm-request-processor-7f4489d8bc-fwbt4                        1/1     Running     0                10d
+nsp-psa-restricted   tlm-transformer-7fb9754d6c-cxd9v 
+
+// open logs
+kubectl -n nsp-psa-restricted logs -f <pod-name>
+                                 1/1     Running     0                8d
+
+// change debug for pods --> edit deployments and change log level from info to debug
+kubectl -n nsp-psa-restricted edit deployments.apps <deployment-name>
+
+// by defaut nats deployment is not running so edit config to make replica as 1 (from 0).
+
+[root@node-sanket-k8sc-node1-1 ~]# kubectl -n nsp-psa-restricted get deployments.apps | grep nats
+tlm-nats-box                        1/1     1            1           10d
+
+kubectl -n nsp-psa-restricted edit deployments.apps tlm-nats-box 
+
+
+// open logs for nats
+[root@node-sanket-k8sc-node1-1 ~]# kubectl get pods -A | grep nats-box
+nsp-psa-restricted   tlm-nats-box-5c6d54f6d5-bfz92
+
+kubectl -n nsp-psa-restricted exec -it tlm-nats-box-5c6d54f6d5-bfz92 /bin/bash
+
+nats sub "telemetry.>" --tlscert=/opt/nsp/os/ssl/certs/nsp/nsp_internal.pem --tlsca=/opt/nsp/os/ssl/internal_ca_cert.pem --tlskey=/opt/nsp/os/ssl/nsp_internal_combined.pem
+s
+
+
+============
+
+remove the adaptor from suit after installtion of suit
+
+nsp@mdm-server-0()> feature:stop mdm-adp-cmodel-equipment-1-0-0-sros-16-0-r4; 
+feature:uninstall mdm-adp-cmodel-equipment-1-0-0-sros-16-0-r4; feature:repo-remove mdm-adp-cmodel-equipment-1-0-0-sros-16-0-r4;
+
+feature:stop mdm-adp-sdn-policy-1-0-0-sros-16-0-r4; 
+feature:uninstall mdm-adp-sdn-policy-1-0-0-sros-16-0-r4; feature:repo-remove mdm-adp-sdn-policy-1-0-0-sros-16-0-r4;
+
+build suits mount:
+==================
+mount 135.250.40.152:/nsp/builds /nsp/builds
+mount 135.250.40.152:/nsp/tools /nsp/tools
+
+http://orbw-git.ca.alcatel-lucent.com/nsp-tools/nsp-tools-transformer-generator/-/merge_requests/15/diffs
+http://orbw-git.ca.alcatel-lucent.com/nsp-tools/nsp-tools-transformer-generator
+
+FileMemory check
+================
+/opt/nsp/mediation/memoryCache
+FileMemory_41.data
+
+135.249.215.208
+
+Local Debug:
+vi /opt/nsp/config/helm/values/mdm/mdm-server/values.yaml
+
+debug_port: 28006
+kubectl -n nsp-psa-privileged port-forward --address 0.0.0.0 mdm-server-0 28006:28006
+
+Increase sessions on SROS
+=========================
+configure read-only
+INFO: CLI #2066: Entering read-only configuration mode
+[ro:/configure]
+A:auto@nodeB# system login-control ssh
+[ro:/configure system login-control ssh]
+A:auto@nodeB# info
+    inbound-max-sessions 50
+    outbound-max-sessions 15
+
+[ro:/configure system login-control ssh]
+A:auto@nodeB# exit all
+INFO: CLI #2067: Exiting read-only configuration mode
+[/]
+A:auto@nodeB# configure global
+INFO: CLI #2054: Entering global configuration mode
+
+[gl:/configure]
+A:auto@nodeB# system login-control ssh
+
+[gl:/configure system login-control ssh]
+A:auto@nodeB# in
+
+ inbound-max-sessions
+
+ info
+
+[gl:/configure system login-control ssh]
+A:auto@nodeB# inbound-max-sessions 40
+
+*[gl:/configure system login-control ssh]
+A:auto@nodeB# outbound-max-sessions 12
+
+*[gl:/configure system login-control ssh]
+A:auto@nodeB# commit
+
+[gl:/configure system login-control ssh]
+A:auto@nodeB# exit all
+
+
+NokNsp1!k@natar1!
+
+CN(Cloud Native) Telemetry
+============
+
+main pods:
+kubectl get pods - A | grep ltm
+
+To list CRD
+kubectl get crd
+
+Transformer
+Device Helper
+
+http://orbw-artifactory.ca.alcatel-lucent.com:8082/ui/native/alu-orbw-virtual/com/nokia/nsp/aa
+
+==> nsp-telemetry-cr-va-sros
+
+To install CR
+
+Need to go to the tlm name space
+kubectl -n nsp-psa-ristricted apply -f <cr yaml>
+
+Delete CRs:
+kubectl delete -f ./7950 -n nsp-psa-restricted ==> to uninstall all CRs from folder 7950
+
+To check the installation,
+kubectl -n nsp-psa-ristricted devicehelpers-nokia.com
+
+Check the subscriptions on the Node
+show system telemetry grpc subscription
+
+To create subscription from NSP
+Neeto goto Management
+
+To see the subscription path on the node
+show system telemetry grpc subscription 16 paths
+
+subscription process:
+
+1. It will come to the RequestProcesser pod to check syntactical errors
+   to checl the logs: kubectl -n nsp-psa-restricted logs -f tlm-request-processor-7f4489d8bc-n7hpz
+2. It will come to the gnmi-collecter pod to check cirtificates validation
+3. Transformer pod
+   some updates need to be done(conversions)
+   
+   kubectl get deployments.apps -A | grep trans
+   To enable debug mode
+   kubectl -n nsp-psa-restricted edit deployments.apps tlm-transformer
+   
+   Another pod
+   kubectl get deployments.apps -A | grep nat
+   to check what id the input comming to the pods like transformer,devicehelper and gnmi,request processor
+   
+   to enter the pod
+   kubectl get deployments.apps -A | grep nat
+   kubectl -n nsp-psa-restricted exec -ti tlm-nats-box-5c6d54f6d5-g58bp /bin/sh
+   nats sub "telemetry.>" --tlscert=/opt/nsp/os/ssl/certs/nsp/nsp_internal.pem --tlsca=/opt/nsp/os/ssl/internal_ca_cert.pem --tlskey=/opt/nsp/os/ssl/nsp_internal_combined.pem
+   
+   
+prefix-suffix :
+echo -n "telemetry:/base/accounting/combined-service-egress-octets" | openssl dgst -sha256 -binary | xxd -ps -c 64
+
+
+====================
+Node config filepolicy/accountingPolicy creation
+
+configure global
+log
+file 5
+compact-flash-location primary cf3
+description seo
+retension 24
+rollover 5
+commit
+back
+accounting-policy 66
+description seo
+destination file 5
+info
+collection-interval 5
+record service-egress-octets
+info
+commit
+/file list
+file list act-collect/
+/show log file-id
+/show log accounting-policy 
+file list act
+
+
+*[pr:/configure service vpls "2445"]
+A:admin@nodeA-SR4# info
+    admin-state enable
+    customer "1"
+    sap lag-3 {
+        admin-state enable
+        accounting-policy 99
+        collect-stats true
+    }
+
+	
+	
+===================================
+Patch installation of pods
+
+helm repo update
+ 
+helm uninstall tlm-accounting-processor --namespace nsp-psa-restricted
+ 
+helm upgrade tlm-accounting-processor --install nokia-nsp/cn-telemetry-accounting-processor --namespace nsp-psa-restricted --version 24.0.0-dev-nspf-316978-cn-accounting-functionality-new.36 --timeout 600s --enable-dns -f /opt/nsp/config/helm/values/accountingTelemetry/tlm-accounting-processor/values.yaml
+ 
+kubectl -n nsp-psa-restricted set image statefulset/tlm-accounting-processor accounting-processor=blr-orbw-artifactory.in.alcatel-lucent.com:8081/orbw-artifactory-docker-mirror/cn-telemetry-accounting-processor:24.0.0-dev-nspf-316978-cn-accounting-functionality-new.36
+ 
+for x in `kubectl get pods -A  | grep tlm-acc| tr -s " " |cut -d' ' -f 2`; do kubectl -n nsp-psa-restricted delete pod --force $x; done
+ 
+ 
+helm uninstall tlm-request-processor --namespace nsp-psa-restricted
+ 
+helm upgrade tlm-request-processor --install nokia-nsp/cn-telemetry-request-processor --namespace nsp-psa-restricted --version 24.0.0-dev-nspf-316978-cn-accounting-functionality-new.22 --timeout 600s --enable-dns -f /opt/nsp/config/helm/values/telemetryBase/tlm-request-processor/values.yaml
+ 
+kubectl -n nsp-psa-restricted set image deployment/tlm-request-processor request-processor=blr-orbw-artifactory.in.alcatel-lucent.com:8081/orbw-artifactory-docker-mirror/cn-telemetry-request-processor:24.0.0-dev-nspf-316978-cn-accounting-functionality-new.22
+ 
+for x in `kubectl get pods -A  | grep tlm-req| tr -s " " |cut -d' ' -f 2`; do kubectl -n nsp-psa-restricted delete pod --force $x; done
+
+
+To check the latest accounting and request processor versions:
+
+
+go to http://orbw-jenkins.ca.alcatel-lucent.com:32000/job/NSP/job/cn/job/cn-telemetry-accounting-processor/job/dev%252F24.0.0-dev-nspf-316978-cn-accounting-functionality-new/
+[12:27] Keshava Bhat K (Nokia)
+and check for latest green runs' console output lokk for 
+INFO: Pushing image: orbw-artifactory.ca.alcatel-lucent.com:8081/nokia-nsp-docker-dev-local/cn-telemetry-accounting-processor:24.0.0-dev-nspf-316978-cn-accounting-functionality-new.36
+
+chart will also be similar number
+
+[consumer_0] Deploying artifact: http://orbw-artifactory.ca.alcatel-lucent.com:8082/artifactory/nokia-nsp-helm-dev-local/nokia/nsp/cn/cn-telemetry-accounting-processor/24.0.0-dev-nspf-316978-cn-accounting-functionality-new.36/cn-telemetry-accounting-processor-24.0.0-dev-nspf-316978-cn-accounting-functionality-new.36.tgz
+
+NSP-CN-24.0.0-dev-nspf-316978-cn-accounting-functionality-new.18/src/ansible/roles/preflight/defaults/helmChartMEtadata.yaml
+
+============================
+
+ unsecure
+
+config global
+system grpc
+admin-state enable allow-unsecure-connection
+gnmi
+admin-state enable
+commit
+
+check
+=====
+system
+security user-params local-user
+
+
+
+indentation: autopep8 --in-place --aggressive --aggressive DownloadYangFiles.py
+
+http://orbw-git.ca.alcatel-lucent.com/kvadapal/mdm-device-model-sros-24-10-r1
+
+grpc enable on node:
+===================
+[gl:/configure]
+A:admin@nodeA-SR4# system grpc
+
+[gl:/configure system grpc]
+A:admin@nodeA-SR4# info
+    admin-state enable
+    allow-unsecure-connection
+    gnmi {
+        admin-state enable
+    }
+show system telemetry grpc subscription
+
+*[gl:/configure service vpls "2445"]
+A:admin@nodeA-SR4# info
+    admin-state enable
+    customer "1"
+    sap 1/1/2:99 {
+        admin-state enable
+        accounting-policy 99
+        collect-stats true
+    }
+
+
+	
+	
+	[Yesterday 15:19] Siva Prasad (Nokia)
+
+
+Basic Config on SR Node to discover
+
+-----------------------------------
+ 
+configure system login-control ssh outbound-max-sessions 10
+configure system login-control ssh inbound-max-sessions 20
+configure system snmp no shutdown 
+configure system snmp packet-size 9216 
+configure system security snmp community private rwa version both 
+configure system security user admin access ftp console 
+configure system security telnet-server 
+configure system security ftp-server 
+configure system login-control idle-timeout disable
+configure system login-control idle-timeout disable
+configure system netconf no shutdown
+configure system grpc no shutdown
+configure system security ssh no server-shutdown
+configure system security user "admin" access netconf
+configure system security user "admin" access grpc
+configure system security profile "administrative" netconf base-op-authorization kill-session
+configure system security profile "administrative" netconf base-op-authorization lock
+configure system netconf capabilities
+candidate
+exit
+
+configure system management-interface
+cli cli-engine md-cli classic-cli
+exit
+
+admin save
+
+admin reboot now
+
+//
+
+configure system management-interface
+configuration-mode model-driven
+exit
+
+//
+
+configure global
+system management-interface netconf listen admin-state enable
+
+commit
+
+exit
+
+admin save
+ 
+=====
+
+For insecure gRPC
+ 
+[gl:/configure system grpc]
+
+A:admin@s168_97_247_acpm# info
+
+    admin-state enable
+
+    allow-unsecure-connection
+
+#commands
+
+bof
+
+static-route 100.0.0.0/8 next-hop 192.168.96.1
+
+save
+
+show bof	
+ 
+[Yesterday 15:20] Siva Prasad (Nokia)
+A:admin@s168_96_236_acpm# show system information | match Mode
+
+
+To create ports after node creation:
+===================================
+sprasads
+Nine!5418
+
+[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# card 1 card-type iom4-e admin-state enable  
+
+[gl:/configure card 1]
+
+A:admin@SivaNew24.4.R1Node# mda 1 mda-type me6-10gb-sfp+ admin-state enable
+
+[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/6 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/1 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/2 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/3 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/4 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# port 1/1/5 admin-state enable
+ 
+*[gl:/configure]
+
+A:admin@SivaNew24.4.R1Node# commit
+
+ 
+Resync:
+=======
+https://confluence.ext.net.nokia.com/display/WSC/OnChange+Device+Event++Resync+Service
+
+
+CR - understanding
+- accounting telemetry yang file - http://orbw-git.ca.alcatel-lucent.com/md/md-restconf-app/-/blob/master/src/main/webapp/yang/telemetry/accounting-telemetry.yang
+- Confluence having acc telemetry device XML response - https://confluence.ext.net.nokia.com/display/WSC/CN+Accounting+Telemetry+-+Node+Setup
+- CR artifacts - http://orbw-artifactory.ca.alcatel-lucent.com:8082/ui/native/alu-orbw-virtual/com/nokia/nsp/aa/nsp-telemetry-cr-acc-sros/
+Some Important K8s commands:
+	- kubectl get crd
+	- kubectl -n nsp-psa-restricted get transformers.nokia.com
+	- kubectl -n nsp-psa-restricted get devicehelpers.nokia.com
+	- kubectl -n nsp-psa-restricted apply -f sros-device-helper.yaml
+	- kubectl -n nsp-psa-restricted edit statefulsets.apps tlm-accounting-processor
+	- "Data towards Javascript function is" - Is the keyword to search for mapped key value pair for device helper input
+ 
+transformedRecord data:
+Data towards Javascript function is: map[exceeded-octets-dropped:0 in-profile-octets-forwarded:0 interface-name:toNodeC meter-id:22 network-interface-id:neo:1.1 
+out-profile-octets-forwarded:0 policer-id:11 sr-meter-id:2 sr-policer-id:1 stat-mode:offered-profile-with-discards system-id:92.168.96.16 
+time-captured:1722322139351 time-recorded:1718789962000]
+ 
+Debugging
+- Logviewer - https://135.249.185.162/logviewer/
+- Grafana - https://135.249.185.162/grafana/
+ 
+ 
+gnmi xpath tool
+- SROS artifact defination yang - http://orbw-git.ca.alcatel-lucent.com/md/md-adaptor-suite/-/blob/master/meta/sros/sros_artifact-definitions.yaml
+- Latest gnmi device communicator - http://orbw-git.ca.alcatel-lucent.com/mdm/mdm-device-comm-gnmi-sros-24-7-r1
+- find file SrGnmiOnChangePaths.json: on path src > main > resources > scripts > gnmi --> SrGnmiOnChangePaths.json
+- Tool Repo link - http://orbw-git.ca.alcatel-lucent.com/varum/gnmi-xpath-version-tool
+- Tool confluence link - https://confluence.ext.net.nokia.com/display/WSC/gnmi-xpath-version-tool
+- Link for GIM idea implementation - https://gim.net.nokia.com/servlet/hype/IMT?documentId=dfda703d569e8689d5581a5ea4682c0c&userAction=Browse&templateName=
+
+
+
+DeviceStore:
+https://nms-confluence.ca.alcatel-lucent.com:8443/display/RCONF/MDM+Console+Client+For+Device+Store
+https://yang.srlinux.dev/releases/v23.7.2/openconfig/tree
+
+pyang -f jstree nokia-conf.yang > nokia_conf_22_5_r1.html  ==> generates html file of the whole conf tree
+pyang -f jstree nokia-state.yang > nokia_state_22_5_r1.html ==> generates html file of the whole state tree
+ 
+https://confluence.ext.net.nokia.com/display/WSC/Yang+Browsing
+Sign in to your account
+
+https://confluence.ext.net.nokia.com/display/DEV/Creating+workflows+in+WFM
+https://yaql.readthedocs.io/en/latest/standard_library.html
+http://orbw-git.ca.alcatel-lucent.com/nsp/nsp-predefined-artifacts.
+
+https://confluence.ext.net.nokia.com/display/RCONF/MDM+Console+Client+For+Device+Store
+https://confluence.ext.net.nokia.com/display/RCONF/Device+Store+And+MDM+Client
+
+LSO:
+====
+https://download-na.support.nokia.com/cgi-bin/Download.pl?hier_id=76472
+
+https://confluence.ext.net.nokia.com/display/WSC/Cmodel+Equipment+Adaptor+basics
+
+==================================
+below are the commands used for MD- classic mode conversion
+ 
+A:NS2111F5858# //
+
+INFO: CLI #2052: Switching to the MD-CLI engine
+ 
+[/]
+
+A:admin@NS2111F5858# configure global
+
+INFO: CLI #2054: Entering global configuration mode
+ 
+[gl:/configure]
+
+A:admin@NS2111F5858# system management-interface con
+ 
+configuration-mode  configuration-save
+ 
+[gl:/configure]
+
+A:admin@NS2111F5858# system management-interface configuration-mode classic
+ 
+*[gl:/configure]
+
+A:admin@NS2111F5858# commit
+
+INFO: CLI #2078: Exiting configuration mode - datastore access lost - 'configure system management-interface configuration-mode' changed
+ 
+[/]
+
+A:admin@NS2111F5858# //
+
+INFO: CLI #2051: Switching to the classic CLI engine
+
+*A:NS2111F5858# configure system management-interface cli cli-engine classic-cli
+
+*A:NS2111F5858# admin save
+
+Writing configuration to cf3:\backup_2024-04-22T13.12.05.cfg
+
+Saving configuration ... OK
+
+WARNING: CLI Synchronization failed - Secondary CPM offline.
+
+==================================
+
+feature_packs
+platformMdm,networkInfrastructureManagement-basicManagement,platform-baseServices,intentBasedNetworkingFramework,serviceActivationAndConfiguration-intentBasedServiceFulfillment,platform-loggingMonitoring
+ 
+ 
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <source>
+    <running/>
+  </source>
+  <filter>
+    <configure xmlns="urn:nokia.com:sros:ns:yang:sr:conf">
+      <system>
+        <management-interface>          
+          <snmp>
+            <packet-size/>
+          </snmp>
+        </management-interface>
+      </system>
+    </configure>
+  </filter>
+</get-config>
+
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <source>
+    <running/>
+  </source>
+  <filter>
+    <configure xmlns="urn:nokia.com:sros:ns:yang:sr:conf">
+      <log>
+        <snmp-trap-group>
+          <log-name>97</log-name>
+          <trap-target>
+            <name>135_249_151_58</name>
+          </trap-target>
+        </snmp-trap-group>
+      </log>
+    </configure>
+  </filter>
+</get-config>
+
+<get-config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <source>
+    <running/>
+  </source>
+  <filter>
+    <state xmlns="urn:nokia.com:sros:ns:yang:sr:state">
+      <log>
+        <snmp-trap-group>
+          <log-name>97</log-name>
+          <trap-target>
+            <name>135_249_151_58</name>
+          </trap-target>
+        </snmp-trap-group>
+      </log>
+    </state>
+  </filter>
+</get-config>
+
+
+=====================
+ssh -s admin@135.121.149.163 -p 830 netconf
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<capabilities>
+<capability>
+
+    urn:ietf:params:netconf:base:1.0
+</capability>
+<capability>
+
+    urn:ietf:params:netconf:capability:writable-running:1.0
+</capability>
+<capability>
+
+     urn:ietf:params:netconf:capability:candidate:1.0
+</capability>
+</capabilities>
+</hello>
+
+]]>]]>
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="57890030">
+<nc:edit-config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+<nc:target><nc:candidate/></nc:target>
+<nc:default-operation>merge</nc:default-operation>
+<nc:error-option>stop-on-error</nc:error-option><nc:config>
+ 
+<configure xmlns="urn:nokia.com:sros:ns:yang:sr:conf">
+<log>
+<snmp-trap-group nc:operation="delete">
+<log-name>97</log-name>
+</snmp-trap-group>
+</log>
+</configure>
+</nc:config></nc:edit-config></rpc>
+]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="57890030" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<ok/>
+</rpc-reply>
+]]>]]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<commit/>
+</rpc>
+]]>]]>
+
+
+==========================================
+[gl:/configure port 1/1/8]
+A:admin@nodeC# info
+    admin-state enable
+    ethernet {
+        mode access
+        encap-type dot1q
+        lldp {
+            dest-mac nearest-bridge {
+                notification true
+                receive true
+                transmit true
+            }
+        }
+    }
+	
+[gl:/configure port 1/1/c1/8]
+A:admin@nodeB# info
+    admin-state enable
+    ethernet {
+        mode access
+        encap-type dot1q
+        lldp {
+            dest-mac nearest-bridge {
+                notification true
+                receive true
+                transmit true
+            }
+        }
+    }
+	
+	
+	
+gnmic -a 135.249.211.204:57400 -u admin -p admin --insecure get --path /state/port[port-id=*]/if-index
+
+"/configure/lag[lag-name=*]/port[port-id=*]",
+"/configure/lag[lag-name=*]/lldp-member-template",
+"/configure/lag[lag-name=*]/lldp-member-template/dest-mac[mac-type=nearest-bridge]/notification",
+"/configure/lag[lag-name=*]/lldp-member-template/dest-mac[mac-type=nearest-bridge]/receive",
+"/configure/lag[lag-name=*]/lldp-member-template/dest-mac[mac-type=nearest-bridge]/transmit"
+
+
+
+

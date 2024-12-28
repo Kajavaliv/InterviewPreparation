@@ -1,0 +1,20 @@
+JSON Web Token (JWT) and OAuth are both popular authentication and authorization protocols for web applications, 
+but they have some key differences: 
+Purpose
+======
+JWT is used for authentication and exchanging information, while OAuth is used for authorization. 
+Statefulness
+==========
+JWT is stateless, meaning it doesn't require a centralized server or database to store tokens.
+ OAuth is stateful, meaning it requires a connection to the authorization server to obtain and verify tokens. 
+Security
+=======
+JWT is a lightweight token that doesn't provide security on its own, but can be secure as part of a well-designed authentication system.
+ OAuth is a secure way to manage authorization flows. 
+Token revocation
+=============
+OAuth provides a mechanism for revoking tokens, while JWT does not. Revoking a JWT token is a complex process that involves issuing a new token with a different secret key. 
+Use cases
+==========
+JWT is commonly used in web applications that use RESTful APIs. OAuth is often used to allow users to log into a service using their credentials from another provider, such as Google, Facebook, or Twitter
+===========================

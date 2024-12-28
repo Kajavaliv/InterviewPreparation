@@ -1,0 +1,117 @@
+import java.util.LinkedList;
+
+class HashMap<K, V> {
+    // Node class to store key-value pairs
+    class HashNode<K, V> {
+        K key;
+        V value;
+
+        HashNode<K, V> next;
+
+        public HashNode(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    private LinkedList<HashNode<K, V>>[] chainArray;
+    private int size; // Number of buckets
+    private int numBuckets; // Initial capacity of array
+
+    // Constructor
+    public HashMap() {
+        numBuckets = 10;
+        chainArray = new LinkedList[numBuckets];
+        size = 0;
+
+        // Initialize each bucket with an empty LinkedList
+        for (int i = 0; i < numBuckets; i++) {
+            chainArray[i] = new LinkedList<>();
+        }
+    }
+
+    // Hash function to calculate index for a given key
+    private int getHash(K key) {
+        return Math.abs(key.hashCode() % numBuckets);
+    }
+
+    // Add a key-value pair
+    public void add(K key, V value) {
+        int bucketIndex = getHash(key);
+        LinkedList<HashNode<K, V>> bucket = chainArray[bucketIndex];
+
+        // Check if the key is already present, update the value
+        for (HashNode<K, V> node : bucket) {
+            if (node.key.equals(key)) {
+                node.value = value;
+                return;
+            }
+        }
+
+        // If key not found, add a new node
+        bucket.add(new HashNode<>(key, value));
+        size++;
+    }
+
+    // Get the value for a given key
+    public V get(K key) {
+        int bucketIndex = getHash(key);
+        LinkedList<HashNode<K, V>> bucket = chainArray[bucketIndex];
+
+        // Search for the key in the bucket
+        for (HashNode<K, V> node : bucket) {
+            if (node.key.equals(key)) {
+                return node.value;
+            }
+        }
+
+        // Key not found
+        return null;
+    }
+
+    // Remove a key-value pair
+    public void remove(K key) {
+        int bucketIndex = getHash(key);
+        LinkedList<HashNode<K, V>> bucket = chainArray[bucketIndex];
+
+        // Find and remove the node with the given key
+        for (HashNode<K, V> node : bucket) {
+            if (node.key.equals(key)) {
+                bucket.remove(node);
+                size--;
+                return;
+            }
+        }
+    }
+
+    // Check if the HashMap is empty
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // Print the HashMap
+    public void printHashMap() {
+        for (int i = 0; i < numBuckets; i++) {
+            System.out.print("Bucket " + i + ": ");
+            for (HashNode<K, V> node : chainArray[i]) {
+                System.out.print("[" + node.key + " : " + node.value + "] ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Example usage
+    public static void main(String[] args) {
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        hashMap.add("apple", 10);
+        hashMap.add("banana", 20);
+        hashMap.add("orange", 30);
+
+        System.out.println("Value for key 'banana': " + hashMap.get("banana"));  // Output: 20
+
+        hashMap.remove("banana");
+        System.out.println("Value for key 'banana' after removal: " + hashMap.get("banana"));  // Output: null
+
+        hashMap.printHashMap();
+    }
+}

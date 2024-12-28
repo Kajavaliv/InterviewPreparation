@@ -1,0 +1,135 @@
+dual table: dual table is a dummy table . it contains only one column. column name: dummy ,datatype: varchar2(1). use the dual table to select sql functions.
+ex:
+select * from dual;
+desc dual;
+
+-------------------------------------
+distinct keyword:  returns non-duplicate records
+ex: select distinct * from table_name;
+    select unique * from table_name;
+
+pseudo columns:
+----------------
+A pseudo column is an oracle assigned value it does not store on disk. Pesudo columns are not actual column but it behaves like a column. Pseudo columns are selected in slection list.
+we can't  insert, update or delete the pesudo coulumns.
+ex:
+rowid
+rownum
+level
+nextval
+curvval
+user
+uid
+
+1. rowid: it means row identifier , it stores the address of  each and every record.18 digits alpha numeric-number
+ex: 
+select rowid from dual;
+select rowid,emp.* from emp;
+
+2. rownum: it means row number, it generates the sequence numbers for each and every record.
+ex:
+select rownum,a.* from dual a;
+select rownum,emp.* from emp;
+select rownum,emp.* from emp where rownum=1;
+select rownum,emp.* from emp where rownum<=1;
+select rownum,emp.* from emp where rownum>=1;
+
+3.user: shows the current user
+ex:
+select user from dual;
+
+4. UID: shows userid
+ex:
+select uid from dual;
+
+--------------------------------------------------
+
+Alias: its a temporary name provided to a table or table column which gets over after complete the execution of sql statement.
+ex:
+select e.* from emp e;
+select emp_name as name,emp_name from emp;
+
+-------------------------------------------
+ORDER BY : to sort the data either ascending or descing order by using ORDER BY clause
+ex:
+select * from emp order by emp_id asc;
+select * from emp order by emp_id desc;
+select * from emp order by emp_id ;  --- by default it takes ascending order.
+
+--------------------------------------------
+
+filter:
+1. Where : where is one of the filter  it filters only single row records.
+2. having: having is one of the filter it filters group of rows.
+
+----------------------------------------------------
+Joins: to retrieve data from multiple tables.
+1. equi join : to retrieve the data when equi join(=) condition is matched.
+select * from emp e join dep d on e.dep_no=d.dep_id;
+
+2. non-equi join: to retrieve the data when non equi-join(!=,<>) condition is matched.
+ex:
+select * from emp e join dep d on e.dep_no<>d.dep_id;
+select e.emp_id as  employee_id,e.emp_name,d.dep_name from emp e inner join dep_tab d on e.emp_dep_no<>d.dep_no order by e.emp_id;
+
+types of joins:
+1. inner join: it returns the data when join condition is matched.
+ex:
+select * from emp e join dep d on e.dep_no=d.dep_id;
+
+2. outer join:
+-> left outer join: it returns the left table data fully  even when join condition is matched to right table or not.
+ex:
+select * from emp e left outer join dep d on e.dep_no=d.dep_id; --here emp is left table, dep is right table
+
+-> right outer join: it returns the right table data fully  even when join condition is matched to left table or not.
+ex:
+select * from emp e right outer join dep d on e.dep_no=d.dep_id; --here emp is right table, dep is left table
+
+->full outer join: it returns all tables data even join condition matched or not.
+ex:
+select * from emp e full outer join dep d on e.dep_no=d.dep_id; 
+
+3. self join: here table is one , we need to split one table as two tables based on alias name.
+ex:
+select * from emp a join  emp b on a.emp_id=b.emp_id;
+
+4. cartesian product : there is no join condition 
+ex:
+select * from emp, dep;
+
+-----------------------------
+multiple tables join example:
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name,e.subject_id ,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             left  join subject s on s.sub_id=e.subject_id;              
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name ,e.subject_id,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             right  join subject s on s.sub_id=e.subject_id;              
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name ,e.subject_id,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             full  join subject s on s.sub_id=e.subject_id;  
+
+---------
+join with where condition example:
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name,e.subject_id ,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             left  join subject s on s.sub_id=e.subject_id
+            where e.emp_id in(101,103) and d.dep_no=20 and s.sub_name='maths';              
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name ,e.subject_id,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             right  join subject s on s.sub_id=e.subject_id
+where e.emp_id in(101,103) or d.dep_no=20 or s.sub_name='maths';               
+
+select e.emp_id as  employee_id,e.emp_name,d.dep_name ,e.subject_id,s.sub_name
+  from emp e inner join dep_tab d on e.emp_dep_no=d.dep_no
+             full  join subject s on s.sub_id=e.subject_id
+where e.emp_id in(101,103) or( d.dep_no=20 and s.sub_name='maths');   
+
+
+----------------------------------------------------------

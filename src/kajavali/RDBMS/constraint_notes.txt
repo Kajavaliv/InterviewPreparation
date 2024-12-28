@@ -1,0 +1,175 @@
+---constraints: constraints are the rules to prevent invalid data entries on a table columns.
+--types of constraints:
+1. Primary key: it does not allows duplicate values and null values.Create only one primary key on a table. We are creating primary key constraint on id columns(ex: college_id,emp_id etc).
+syntax:
+create table table_name(column_name1 datatype constraint ,
+                        column_name2 datatype);
+
+ex:
+create table pry_chk(id number primary key,
+                     name varchar2(20));                                    
+                     
+2. unique key: it does not allows duplicate values and it allows multiple null values. We are creating unique key constraint on phone number columns.
+syntax:
+create table table_name(column_name1 datatype ,
+                        column_name2 datatype constraint
+                        );
+ex:
+create table uniq_chk(id number,
+                      phone number unique 
+                      );
+                      
+                     
+3. check: check constraint is a condition at the time of table creation we restrict the column values . We are creating check constraint on age column.
+syntax: 
+create table table_name(column_name1 datatype ,
+                        column_name2 datatype constraint
+                        );
+ex:
+create table chk_chk(id number,
+                     age number check(age>18)
+                     );
+                     
+4. foreign key: Simply say relationship between parent tabble and child table and parent table must and should have a primary key column.
+on delete cascade: what are the records are deleted in parent table the same records are deleted in child table.
+on delete set null: what are the records are deleted in parent table the same records are set to null values in child table.
+
+ex: create table parent_table(p_id number primary key,
+                              p_name varchar2(20));
+                              
+    create table child_table(c_id number references parent_table(p_id) on delete cascade,
+                             c_name varchar2(20)
+                             );                                         
+             
+    create table child_1_table(c_id number references parent_table(p_id) on delete cascade,
+                             c_name varchar2(20)
+                             ); 
+     --------------------------------------------------------------------------------------
+     create table parent_1_table(p_id number primary key,
+                              p_name varchar2(20));
+                              
+     create table child_2_table(c_id number references parent_1_table(p_id) on delete set null,
+                             c_name varchar2(20)
+                             );                                         
+             
+    create table child_3_table(c_id number references parent_1_table(p_id) on delete set null,
+                             c_name varchar2(20)
+                             ); 
+                                            
+                      
+                      
+5. default: set a default value on table column.
+ex: create table def_chk(id number,
+                        name varchar2(20),
+                        dep_id number default 10);
+                        
+                        
+6. not null: it does not allows null values.
+ex: create table not_chk(id number,
+                         name varchar2(20) not null);
+                         
+                         insert into not_chk(id,name) values(101,'qdsdfgjhgfdww5fvd');
+                         
+                         
+   
+create table final_chk(id number primary key,
+                       name varchar2(20) unique,
+                       age number check(age>18),
+                       dep_id number default 10,
+                       address varchar2(20) not null
+                       );  
+                       
+create table for_chk(id number references final_chk(id) on delete set null,
+                    name varchar2(20)
+                    );
+ --------------------------------------------------------
+ alters on constraint i.e; existing table does not have constraint after table creation then we need to do create constraints
+ 
+ 
+create table alt_chk(id number ,
+                       name varchar2(20) ,
+                       age number ,
+                       dep_id number ,
+                       address varchar2(20) 
+                       );  
+  create table child_chk(id number);      
+  
+ alter on primary key constraint:
+ syntax: alter table table_name add constraint constraint_name primary key(column_name);
+ ex: alter table alt_chk add constraint pry_chk primary key(id);
+ 
+ 
+ alter on unique key constraint:
+ syntax: alter table table_name add constraint constraint_name unique key(column_name);
+ ex: alter table alt_chk add constraint uniq_chk unique(name);
+ 
+ alter on check  constraint:
+ syntax: alter table table_name add constraint constraint_name check (expression);
+ ex: alter table alt_chk add constraint chk_chk check(age>18);
+ 
+ 
+ alter on foreign key  constraint:
+ syntax: alter table table_name add constraint constraint_name foreign key (child_table_column_name) references parent_table(parent_table_column_name);
+ ex: alter table child_chk  add constraint for_chk foreign key(id) references alt_chk(id) on delete cascade;
+ 
+ 
+ alter on default  constraint:
+ syntax: alter table table_name modify column_name default default_value;
+ ex: alter table alt_chk modify  dep_id default 10 ;
+ 
+ 
+ alter on not null  constraint:
+ syntax: alter table table_name modify column_name not null;
+ ex: alter table alt_chk modify  address not null  ;
+ 
+ how to check the constraints on a table:
+ select * from all_constraints where table_name='ALT_CHK';
+ 
+ how to enable or disable constraint:
+ syntax: alter table table_name disable/enable constraint constraint_name;
+ ex:
+ alter table alt_chk disable constraint SYS_C007824;
+ alter table alt_chk enable constraint SYS_C007824;
+ 
+ 
+ rename the constraint name:
+ syntax: ALTER TABLE table_name RENAME CONSTRAINT old_constraint_name  TO new_constraint_name;
+ ex:
+ ALTER TABLE ALT_CHK RENAME CONSTRAINT PK_SPECIALITE_1 TO PK_CHK;
+ 
+ drop constraaints
+ syntax: 
+ ALTER TABLE table_name drop  CONSTRAINT constraint_name ;
+ ex:
+ ALTER TABLE ALT_CHK drop  CONSTRAINT PK_CHK ;
+ 
+ ----------------------------------------
+ Table level/column level constraints: we create a constraints on end of the table creation 
+ 1. primary key
+ 2. unique key
+ 3. foreign key
+ 4. check
+ 
+ ex:                     
+create table tablvl_chk(id number   ,
+                       name varchar2(20)  ,
+                       age number ,
+                       dep_id number ,
+                       address varchar2(20) ,
+                       constraint prykey_chk primary key(id),
+                       constraint chk_val check(age>10),
+                       constraint uniq_val unique(dep_id)
+                       );                   
+                      
+ ex:
+ create table tablvl_forei(id number,
+                          name varchar2(20),
+                          constraint fore_chk foreign key(id) references tablvl_chk(id) on delete set null
+                          );
+                      
+Column level constraints:  create only column level
+1. not null
+2.default
+                      
+                      
+                      

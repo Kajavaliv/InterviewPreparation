@@ -1,0 +1,18 @@
+public class Test{
+
+public void static main(String args[]){
+
+
+        List list  = Arrays.asList(20,110,30,10,111,600,700);
+                list.stream().map(e->((String)e)).filer(e->e.char[0]==1).collect(Collectors.toList());
+
+String str = "Hello my name is xyz";
+             "xyz is name my hello"
+             
+             Arrays.aslist(str.split(" ")).sorted(Comparator.resesved).map(e->e).collect(Collectors.joining(" "));
+                   
+
+
+}
+
+}

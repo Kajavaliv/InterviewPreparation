@@ -1,0 +1,134 @@
+Relation Database: A relational database is a collection of related information that has been organized into tables. Each table stores data in rows; the data is arranged into columns. 
+                   The tables are stored in database schemas, which are areas where users may store their own tables. 
+                   A user may grant permissions to other users so they can access their tables.
+                   
+
+SQL : structured Query Language
+
+SQL commands: DDL,DML, TCL, DCL, DRL
+
+DDL: data definition language . it defines the structure of the table (database objects). DDL commands are auto-commit;
+-----------
+create : to create a table 
+syntax: create table table_name(column_name1 datatype, column_name2 datatype, column_name3 datatype,....);
+ex: 
+create table test_tab(tab_id number, tab_name varchar2(20));
+
+Alter: to alter the table structure 
+
+-> to  add a table column on existing table
+syntax: alter table table_name add column_name datatype;
+ex:
+alter table test_tab add tab_add varchar2(20);
+
+->to  drop a column on existing table
+syntax: alter table table_name drop column column_name;
+ex:
+alter table test_tab drop column tab_add;
+
+-> to rename a column name on existing table 
+syntax: alter table table_name rename column old_column_name to new_column_name;
+ex:
+alter table test_tab rename column tab_name to tab_naming;
+
+-> to modify the datatype size on existing table column size
+syntax: alter table table_name modify column_name datatype;
+ex:
+alter table test_tab modify  tab_naming varchar2(100);
+
+rename: rename the table name
+syntax: rename old_table_name to new_table_name;
+ex: 
+rename test_tab to testing_tab;
+
+
+truncate : to delete/erasie the entire table data. but table structure is available
+syntax: truncate table table_name;
+ex:
+truncate table testing_tab;
+
+drop: to drop the existing table, entire table data and table structure is also dropped
+syntax: drop table table_name;
+ex: 
+drop table test_tab;
+
+---------------------------------------------------------
+
+DML: data manipulation language , it defines the table data.
+
+insert: to insert the data  into a table
+syntax: insert into table_name(column_1,column_2,column_3,...)values(value_1,value_2,value_3,.....);
+ex:
+insert into testing_tab(tab_id,tab_naming)values(1,'abc');
+insert into testing_tab values(2,'test');  ---if you know how many columns in a table
+insert into testing_tab(tab_id,tab_naming)values(3,null);
+insert into testing_tab(tab_id)values(4); --if we tries to insert few columns only
+
+update: to update the  table data.
+syntax: update table_name set column_1=value_1, column_2=value_2,.....where condition --where condition is optional
+ex:
+update testing_tab set tab_naming='xyz' where tab_id=1; ---using where condtion to update certain records
+update testing_tab set tab_naming='qazx'; ---no where condition so, update all table data.
+update testing_tab set tab_id=1, tab_naming='test' where tab_id=2;
+
+delete: to delete table data 
+syntax: delete from table_name where condition....--(where condition is optional)
+ex:
+delete from testing_tab where tab_id=2; --- based on where condtion delete only certain records
+delete from testing_tab; ---no where condition means to delete entire table data
+
+merge: ---discuss will later
+
+---------------------------------------------------
+TCL: transaction control language, is defines table data is saved or not
+
+commit: to saved the table data permanently.
+syntax: commit;
+ex: commit;
+
+rollback:  it generates the undo data means what are the transactions happened before commit it rollbacks last committed data.
+syntax: rollback;
+ex: rollback;
+
+savepoint: to split the multiple rollback transactions
+syntax: savepoint s1;
+ex: 
+delete from testing_tab where tab_id in(1,2);
+savepoint s1;
+delete from testing_tab where tab_id in(4);
+savepoint s2;
+delete from testing_tab where tab_id=5
+savepoint s3;
+
+rollback to s2;
+
+------------------------------
+
+
+DCL: data control language ,it defines to give the premissions to other users
+
+grant: to grant the tables(database objects) to other user
+syntax: grant all on table_name to  other_user_name
+ex:
+grant all on testing_tab to srinu;
+
+all-->select/insert/delete/update
+
+revoke: to revoke(stop) the permission from other users
+syntax: revoke all on table_name from other_user;
+ex:
+revoke all on testing_tab from srinu;
+
+----------------------------------------
+
+DRL/query statement:  it defines to retrieve the table data.
+
+select:
+syntax: select.....;
+select * from testing_tab;
+
+
+difference truncate/delete
+-------------------------
+truncate: truncate does not generates undo data beacuse ddl commands are auto-commit.
+delete: delete generates undo data by using the rollback because delete is dml command .dml commands are manual commit/rollback done by user.

@@ -1,0 +1,174 @@
+// Custom HashMap implementation
+class HashMap<K, V> {
+    // Node class to store key-value pairs
+    class HashNode<K, V> {
+        K key;
+        V value;
+        HashNode<K, V> next;
+
+        public HashNode(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    // Array of buckets (linked list heads)
+    private HashNode<K, V>[] bucketArray;
+    private int numBuckets;
+    private int size;
+
+    // Constructor: initializes the map with a default number of buckets
+    public HashMap() {
+        numBuckets = 10;
+        bucketArray = new HashNode[numBuckets];
+        size = 0;
+    }
+
+    // Get the size of the HashMap
+    public int size() {
+        return size;
+    }
+
+    // Check if the HashMap is empty
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    // Hash function to map the key to an index
+    private int getBucketIndex(K key) {
+        int hashCode = key.hashCode();
+        return Math.abs(hashCode % numBuckets);
+    }
+
+    // Method to get the value for a given key
+    public V get(K key) {
+        int bucketIndex = getBucketIndex(key);
+        HashNode<K, V> head = bucketArray[bucketIndex];
+
+        // Traverse the linked list at that index
+        while (head != null) {
+            if (head.key.equals(key)) {
+                return head.value;
+            }
+            head = head.next;
+        }
+
+        // If key not found
+        return null;
+    }
+
+    // Method to add or update a key-value pair
+    public void put(K key, V value) {
+        int bucketIndex = getBucketIndex(key);
+        HashNode<K, V> head = bucketArray[bucketIndex];
+
+        // Check if the key is already present
+        while (head != null) {
+            if (head.key.equals(key)) {
+                head.value = value;  // Update the value
+                return;
+            }
+            head = head.next;
+        }
+
+        // Insert a new key-value pair
+        size++;
+        head = bucketArray[bucketIndex];
+        HashNode<K, V> newNode = new HashNode<>(key, value);
+        newNode.next = head;  // Insert at the head of the list
+        bucketArray[bucketIndex] = newNode;
+
+        // If the load factor exceeds a threshold, we need to resize the HashMap
+        if ((1.0 * size) / numBuckets >= 0.7) {
+            resize();
+        }
+    }
+
+    // Method to remove a key-value pair
+    public V remove(K key) {
+        int bucketIndex = getBucketIndex(key);
+        HashNode<K, V> head = bucketArray[bucketIndex];
+        HashNode<K, V> prev = null;
+
+        // Traverse the list to find the key
+        while (head != null) {
+            if (head.key.equals(key)) {
+                break;
+            }
+            prev = head;
+            head = head.next;
+        }
+
+        // If the key is not found
+        if (head == null) {
+            return null;
+        }
+
+        // Reduce the size
+        size--;
+
+        // Remove the node
+        if (prev != null) {
+            prev.next = head.next;
+        } else {
+            bucketArray[bucketIndex] = head.next;
+        }
+
+        return head.value;
+    }
+
+    // Method to resize the HashMap when the load factor exceeds 0.7
+    private void resize() {
+        HashNode<K, V>[] temp = bucketArray;
+        numBuckets = 2 * numBuckets;
+        bucketArray = new HashNode[numBuckets];
+        size = 0;
+
+        // Rehash all the keys
+        for (HashNode<K, V> headNode : temp) {
+            while (headNode != null) {
+                put(headNode.key, headNode.value);
+                headNode = headNode.next;
+            }
+        }
+    }
+
+    // Print the contents of the HashMap
+    public void printHashMap() {
+        for (int i = 0; i < numBuckets; i++) {
+            HashNode<K, V> head = bucketArray[i];
+            System.out.print("Bucket " + i + ": ");
+            while (head != null) {
+                System.out.print("[" + head.key + " : " + head.value + "] ");
+                head = head.next;
+            }
+            System.out.println();
+        }
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        // Create a HashMap
+        HashMap<String, Integer> map = new HashMap<>();
+
+        // Add key-value pairs
+        map.put("one", 1);
+        map.put("two", 2);
+        map.put("three", 3);
+
+        // Retrieve values
+        System.out.println("Value for 'one': " + map.get("one"));   // Output: 1
+        System.out.println("Value for 'two': " + map.get("two"));   // Output: 2
+
+        // Remove a key-value pair
+        System.out.println("Removed value for 'two': " + map.remove("two"));
+
+        // Try to get the removed value
+        System.out.println("Value for 'two' after removal: " + map.get("two"));   // Output: null
+
+        // Print the entire HashMap
+        map.printHashMap();
+    }
+}

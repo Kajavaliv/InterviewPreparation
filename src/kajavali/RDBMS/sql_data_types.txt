@@ -1,0 +1,49 @@
+--sql datatypes
+datatypes: it defines the  what type of column it is.
+
+->
+number(precision,scale): its takes float values and number ,maximum size precision=38 digits, scale= -84 to 127
+
+->
+integer: it takes only number not float values. maximum size 38 digits.
+
+->
+char:  maximum size 2000 bytes
+      it takes fixed length 
+      it waste memory 
+      
+for ex: the size of the name column is 20 , the first record name column values is 'abc' but char internally allocates 20 blocks of this name then  placed 3 blocks for 'abc' 
+        remaining 17 blocks are wasted.
+        and also second record name column value is 'abcxyz' again char allocates 20 block. so, it allocates 20 blocks for each and every name column value.
+        
+->
+varchar: maximum size 4000 bytes
+         it  takes variable length but it placed the null of remaining blocks .
+         
+->
+varchar2: maximum size 4000 bytes
+         varchar2 takes variable length it saves menory. In oracle 12 varchar2 size is 32767 bytes.
+
+for ex: the size of the name column is 20 , the first record name column values is 'abc' but varchar2  initially  allocates 20 blocks of this name then  placed 3 blocks for 'abc' 
+        remaining 17 blocks are used to next name column value .once all 20 blocks are filled  then only it allocates another 20 blocks.
+        
+->
+date: used on date columns
+     maximum date between 'january 1,4712 B.C  and december 31,4712 A.D'
+
+ex:insert into table_name (date_col) values(to_date('2020-01-01','yyyy-mm-dd'))
+
+below is the example for all datatypes columns:
+create table sql_datype(id numeric,address varchar2(20), t_date_col date,amount numeric(1,2),address_2 varchar(10),sequence_id integer,gender char(1) );
+     
+->BLOB: binary large object .maximum size : 128 tera bytes
+
+->CLOB: character large object. maixmum size is 128 tera bytes
+
+->binary float: it takes float values. size is 5 bytes
+
+->binary double: it takes double values. size is 9 bytes
+
+-> RAW: 2000 bytes maximum size
+         
+

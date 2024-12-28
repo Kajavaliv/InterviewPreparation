@@ -1,0 +1,15 @@
+@EnableCaching
+@Cacheable   -- store in application first for method
+@CacheEvict  -- remove caches
+@CachePut ---- update the cache
+@Caching   ----  evict only once but caching using to evit mulpites
+@CacheConfig  ---- class level for all methods of class
+
+---------------
+different cache providers
+
+JDK concuurentMap-based Cache.
+Ehcache-based cache
+caffeine Cache
+--------------
+how can I set the ttl/tti/eviction policy

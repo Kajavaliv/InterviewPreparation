@@ -1,0 +1,5 @@
+1 . sealed interface
+2 .Pattern Matching for switch
+3. Pattern Matching for instanceof
+4. Text Blocks (Standard, JEP 378)
+5. Records (Finalized, JEP 395)

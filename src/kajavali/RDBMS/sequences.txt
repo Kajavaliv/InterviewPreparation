@@ -1,0 +1,127 @@
+sequence:   sequence  generates the auto-incremention of unique values.  It populates primary key values.
+
+syntax: 
+
+create sequence sequence_name
+start with start_num
+increment by increment_num
+maxvalue [max_num|nomaxvalue]
+minvalue [min_val|nominvalue]
+cycle|nocycle
+cache [cache_num|nocache]
+order|noorder;
+
+ex:
+
+create sequence seq1
+start with 1
+increment by 2
+maxvalue 20
+minvalue 1
+cycle
+cache 10
+order;
+
+how to use sequence in a table
+
+create table t1(id number, name varchar2(20));
+
+select * from t1;
+
+insert into t1 values(seq1.nextval,'y');
+
+------------------------------------------------------------------------------------
+
+how to check the current sequence number and next sequence number:
+sequence contains two pseudo columns:
+1. currval: its shows the current sequence number 
+2. nextval: its shows the next sequence number
+
+select seq1.currval from dual;
+select seq1.nextval from dual;
+
+-----------------------------------------------------------------------------
+
+Disadvantages on sequence:
+if we use same sequence number on multiple tables then sequence is missing 
+
+for example here sequence is seq1. i am  using same sequence seq1 on multiple tables(t1,t2)
+
+select * from t1;
+
+insert into t1 values(seq1.nextval,'z');
+
+select * from t2;
+
+insert into t2 values(seq1.nextval,'abc');
+
+-----------------------------------------------------------------------------------
+
+Notes:
+
+once we create sequence ,first we need to generate the nextval then check the current value otherwise it throws an error(means once sequence is create if we check the current value throws error because sequence 
+is not generated).
+
+ex:
+
+create sequence seq2
+start with 1
+increment by 1
+maxvalue 20
+minvalue 1
+cycle
+cache 10
+order;
+
+select seq2.currval from dual;
+error:
+ORA-08002: sequence SEQ2.CURRVAL is not yet defined in this session
+08002. 00000 -  "sequence %s.CURRVAL is not yet defined in this session"
+*Cause:    sequence CURRVAL has been selected before sequence NEXTVAL
+*Action:   select NEXTVAL from the sequence before selecting CURRVAL
+
+--------------------------------------------------------------------------------
+
+Interview question: how to get missing sequence numbers;
+
+for: 
+select * from t1;
+
+with tab as (
+select min(id) oldest,max(id) recent from t1
+),
+all_miss as (
+select oldest+level-1 as miss_id  from tab  connect by level <=(select max(id) from t1)
+) --select * from all_miss;
+select a.miss_id,d.* from all_miss a left join t1 d on a.miss_id=d.id where d.id is null;  ---using join to get missing sequence number.
+--where a.miss_id=d.id(+) and d.id is null;
+--select * from all_miss minus select id from t1; ---using minus set operator we can get missing sequence number.
+
+2. scenario: by using sequence i am inerting a records in a t2 table and some others alos inserting a records without sequence.
+ex:
+insert into t2 values(seq2.nextval,'b');
+
+select * from t2;
+
+insert into t2 values(4,'x');
+
+alter sequence seq2 increment by 2;  --to break/jump the sequence(1,2,3,4(without sequence number),5)
+
+select seq2.nextval from dual;
+
+
+alter sequence seq2 increment by 1;  -- back to original increment number(1,2,3,4,5,6)
+
+
+insert into t2 values(seq2.nextval,'abc');
+
+select * from t2;
+
+
+
+--------------------------------------------------------------------
+
+how to see and drop the sequences:
+select * from all_sequences WHERE sequence_name='SEQ1';
+drop sequence SEQ1;
+--------------------

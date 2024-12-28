@@ -1,0 +1,242 @@
+Java 8 to Java 17 introduced a number of significant new features and enhancements. Here's a list of key features introduced in each version:
+
+---
+
+### **Java 8 (March 2014)** - **LTS**
+1. **Lambda Expressions**:
+   - Introduces functional programming by allowing expressions to be passed as arguments.
+   ```java
+   (params) -> expression
+   ```
+   
+2. **Streams API**:
+   - Provides a functional approach to processing collections of objects in a pipeline fashion.
+   ```java
+   list.stream().filter(...).map(...).collect(Collectors.toList());
+   ```
+
+3. **Default Methods**:
+   - Enables interfaces to have methods with implementations, providing backward compatibility.
+   ```java
+   interface MyInterface {
+       default void myMethod() { ... }
+   }
+   ```
+
+4. **Optional Class**:
+   - Used to represent a value that may or may not be present, avoiding `NullPointerException`.
+   ```java
+   Optional<String> name = Optional.ofNullable(value);
+   ```
+
+5. **New Date and Time API**:
+   - Replaces the outdated `java.util.Date` and `Calendar` with `java.time.*` package, such as `LocalDate`, `LocalTime`, `LocalDateTime`.
+   ```java
+   LocalDate today = LocalDate.now();
+   ```
+
+6. **Method References**:
+   - Provides shorthand for lambda expressions that call methods directly.
+   ```java
+   list.forEach(System.out::println);
+   ```
+
+7. **Collectors API**:
+   - Provides easy ways to accumulate elements from streams into various data structures like `List`, `Set`, `Map`.
+
+8. **Nashorn JavaScript Engine**:
+   - Introduces a lightweight JavaScript runtime that runs on the JVM.
+
+---
+
+### **Java 9 (September 2017)**
+1. **Project Jigsaw (Module System)**:
+   - Introduces the module system to divide code into independent modules, improving encapsulation.
+   ```java
+   module my.module { ... }
+   ```
+
+2. **JShell (REPL)**:
+   - Provides a Read-Eval-Print Loop (REPL) for quickly testing Java code snippets interactively.
+
+3. **Factory Methods for Collections**:
+   - Introduces convenient static methods to create immutable collections (`List`, `Set`, `Map`).
+   ```java
+   List<String> list = List.of("A", "B", "C");
+   ```
+
+4. **Private Interface Methods**:
+   - Allows interfaces to have private methods to reduce redundancy in default methods.
+
+5. **Stream API Improvements**:
+   - Adds new methods like `takeWhile()`, `dropWhile()`, and `ofNullable()` to the `Stream` API.
+
+6. **Try-With-Resources Enhancement**:
+   - Allows existing variables to be used in a `try-with-resources` statement.
+   ```java
+   try (myResource) { ... }
+   ```
+
+---
+
+### **Java 10 (March 2018)**
+1. **Local-Variable Type Inference (`var`)**:
+   - Introduces the `var` keyword to infer the type of local variables, improving readability.
+   ```java
+   var list = new ArrayList<String>();
+   ```
+
+2. **Garbage Collector Interface**:
+   - Provides a common interface to work with different garbage collection implementations.
+
+3. **Copy Constructors for Collections**:
+   - Adds methods like `List.copyOf()`, `Set.copyOf()`, and `Map.copyOf()` to create unmodifiable copies of existing collections.
+
+---
+
+### **Java 11 (September 2018)** - **LTS**
+1. **New `HttpClient` API**:
+   - Introduces a new, modern HTTP client with support for HTTP/2, WebSockets, and asynchronous requests.
+   ```java
+   HttpClient client = HttpClient.newHttpClient();
+   HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+   ```
+
+2. **Local-Variable Syntax for Lambda Parameters**:
+   - Allows `var` to be used in lambda expressions.
+   ```java
+   (var a, var b) -> a + b;
+   ```
+
+3. **String Methods Enhancements**:
+   - Adds useful methods such as `isBlank()`, `lines()`, `strip()`, `repeat()`.
+   ```java
+   " Hello ".strip();  // "Hello"
+   ```
+
+4. **File Methods Enhancements**:
+   - Adds methods like `Files.writeString()`, `Files.readString()` to make file operations easier.
+
+5. **Nest-Based Access Control**:
+   - Improves JVM support for accessing private members between nested classes.
+
+6. **Deprecation of Nashorn**:
+   - Marks the Nashorn JavaScript engine as deprecated.
+
+7. **Running Java Files Without Compilation**:
+   - Allows single-file source code to be run directly without compiling first.
+   ```bash
+   java MyProgram.java
+   ```
+
+---
+
+### **Java 12 (March 2019)**
+1. **Switch Expressions (Preview)**:
+   - Enhances `switch` to act as both an expression and a statement, returning values.
+   ```java
+   int result = switch (day) {
+       case MONDAY, FRIDAY -> 6;
+       case TUESDAY -> 7;
+       default -> 0;
+   };
+   ```
+
+2. **JVM Constants API**:
+   - Provides a new API to model nominal descriptions of key class-file and runtime artifacts.
+
+---
+
+### **Java 13 (September 2019)**
+1. **Text Blocks (Preview)**:
+   - Introduces multi-line string literals to improve readability of multi-line strings.
+   ```java
+   String html = """
+       <html>
+           <body></body>
+       </html>
+       """;
+   ```
+
+2. **Switch Expressions (2nd Preview)**:
+   - Refines the `switch` expressions further.
+
+---
+
+### **Java 14 (March 2020)**
+1. **Switch Expressions (Standard)**:
+   - Makes switch expressions a standard feature.
+
+2. **Records (Preview)**:
+   - Introduces compact, immutable data carrier classes with minimal boilerplate.
+   ```java
+   public record Point(int x, int y) {}
+   ```
+
+3. **Pattern Matching for `instanceof` (Preview)**:
+   - Simplifies the `instanceof` operator by introducing pattern matching.
+   ```java
+   if (obj instanceof String s) {
+       System.out.println(s);
+   }
+   ```
+
+4. **Helpful NullPointerExceptions**:
+   - Adds better diagnostics for `NullPointerException` by providing more detailed error messages.
+
+---
+
+### **Java 15 (September 2020)**
+1. **Text Blocks (Standard)**:
+   - Text blocks are made a permanent feature.
+   
+2. **Sealed Classes (Preview)**:
+   - Introduces sealed classes to restrict which classes can extend or implement them.
+   ```java
+   public abstract sealed class Shape permits Circle, Rectangle {}
+   ```
+
+3. **Hidden Classes**:
+   - Introduces hidden classes to support frameworks that generate classes at runtime but do not want them to be exposed to the application.
+
+---
+
+### **Java 16 (March 2021)**
+1. **Records (Standard)**:
+   - Records become a permanent feature.
+   
+2. **Pattern Matching for `instanceof` (Standard)**:
+   - Pattern matching for `instanceof` becomes a standard feature.
+
+3. **Sealed Classes (2nd Preview)**:
+   - Refines sealed classes further.
+
+4. **Vector API (Incubator)**:
+   - Introduces a new API to express vector computations that can be efficiently mapped to hardware.
+
+---
+
+### **Java 17 (September 2021)** - **LTS**
+1. **Sealed Classes (Standard)**:
+   - Sealed classes become a standard feature, providing a way to define a restricted class hierarchy.
+
+2. **Pattern Matching for `switch` (Preview)**:
+   - Extends pattern matching to `switch` statements, allowing more expressive control flows.
+
+3. **Foreign Function & Memory API (Incubator)**:
+   - Provides APIs to interact with native code and memory directly, replacing JNI in many cases.
+
+4. **Deprecation of Applet API**:
+   - The Applet API is deprecated for removal in a future version.
+
+5. **Context-Specific Deserialization Filters**:
+   - Introduces deserialization filters to protect applications from security risks associated with Java object deserialization.
+
+---
+
+### Summary of **LTS Versions**:
+- **Java 8**: Lambda expressions, Streams, Date/Time API.
+- **Java 11**: HTTP Client API, String and File API improvements, local-variable syntax for lambdas.
+- **Java 17**: Sealed Classes, Pattern Matching, Foreign Function API.
+
+Each Java version introduced notable enhancements that contribute to improved code simplicity, performance, and modern language features.

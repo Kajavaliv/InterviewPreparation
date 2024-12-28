@@ -1,0 +1,13 @@
+pointcut:
+------------- 
+is an expression that matches join points to determine when advice should be executed.
+ Pointcuts are made up of two parts: a signature and a pointcut expression
+===========
+jointpoint
+==================
+is a point in a program's execution, such as when a method is executed or an exception is handled.
+==========
+advice
+===========
+ is a function, method, or procedure that modifies other functions when they are run at a specific join point in a program.
+====================
