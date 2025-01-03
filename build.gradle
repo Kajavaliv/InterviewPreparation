@@ -1,0 +1,169 @@
+buildscript {
+    repositories {
+        maven {
+            url = "${artifactory_plugin_url}"
+        }
+        maven {
+            url = "${artifactory_virtual_url}"
+        }
+
+	    //mavenLocal()
+    }
+    dependencies {
+        classpath 'com.alu.pnt:build-orbw-gradle-plugin:1.2.+'
+        classpath 'com.nokia.nsp.mdm:plugin-mdm-adapter-development:2.0.+'
+        classpath 'com.nokia.nsp.mdm:md-nsp-mdm-core-dependencies:23.4.0-rel.+'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url = "${artifactory_virtual_url}"
+        }
+
+	    //mavenLocal()
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'com.jfrog.artifactory'
+apply plugin: 'findbugs'
+apply plugin: 'orbweaver-build'
+apply plugin: 'mdm-adapter-development'
+apply plugin: 'nsp-mdm-core-dependencies'
+apply plugin: 'jacoco'
+
+publishing {
+    publications {
+        artifactoryPublications(MavenPublication) {
+            from components.java
+            artifact jar
+            artifact sourcesJar
+        }
+    }
+}
+
+ext {
+    rootYangModel = "openconfig-lldp"
+    mdmAmiModuleGroup = 'com.nokia.nsp.mdm'
+    mdmAmiModuleName = 'mdm-ami-openconfig-lldp-v2'
+    mdmAmiModuleVersion = '2.0.0-rel.+'
+}
+
+configurations {
+    featureConfiguration  // use this dependency configuration to include in karaf features
+    featureConfiguration.exclude group: "org.slf4j"
+    featureConfiguration.exclude group: "log4j"
+    deviceModels { transitive = false }
+    amiModels {transitive=false}
+}
+
+dependencies {
+    compile ("com.nokia.nsp.mdm:mdm-core-ami") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-registry") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-ne-registry") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-common-model") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-common") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-adapter") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-adaptor-onchange") { transitive = false }
+    compile ("com.nokia.nms.osgi:shared-common-osgi") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-sbi") { transitive = false }
+    // AMI dependency is added by plugin 'mdm-adapter-development' based on ami ext properties defined above
+    compile ("com.nokia.nsp.mdm:mdm-core-netconf") { transitive = false }
+    compile ("com.nokia.nms.osgi:shared-netconf-client") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-template") { transitive = false }
+    compile ("com.nokia.nsp.mdm:mdm-core-converter") { transitive = false }
+    compile('com.google.guava:guava:20.0') { transitive = false }
+
+    compile ("com.nokia.nsp.mdm:mdm-adp-openconfig-logical-inventory-sros-shared:3.+")  { transitive = false }
+
+    compile 'org.slf4j:slf4j-log4j12'
+    compile 'org.osgi:org.osgi.core'
+    compile "org.osgi:org.osgi.service.component.annotations"
+    compile "com.fasterxml.jackson.core:jackson-databind"
+    compile "io.reactivex.rxjava2:rxjava"
+
+
+    testCompile 'junit:junit:4.12'
+    testCompile "com.nokia.nsp.mdm:mdm-test-adp-util:2.0.0-rel.+"
+    testCompile "com.nokia.nsp.mdm:mdm-adp-openconfig-logical-inventory-sros-test:2.0.0-rel.+"
+
+    deviceModels ('com.nokia.nsp.mdm:mdm-device-model-sros-20-10-r1:2.1.0-rel.+')
+    deviceModels ('com.nokia.nsp.mdm:mdm-device-model-sros-19-5-r1:2.0.1-rel.+')
+    amiModels('com.nokia.nsp.mdm:mdm-ami-openconfig-lldp-v2')
+}
+
+karaf {
+    features {
+
+        feature {
+            name        = project.name
+            description = project.description
+            includeProject = true
+            feature 'mdm-core-all'
+            feature 'mdm-adaptor-onchange'
+            feature "mdm-adp-openconfig-logical-inventory-sros-shared"
+            feature "${mdmAmiModuleName}"
+            configurations 'featureConfiguration'
+
+        }
+    }
+    kar {
+        enabled = true
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+        'Mvm-Pass-Through-Meta-Root': 'augmentation')
+    }
+    exclude('*.yang')
+}
+
+task deployKar {
+    doLast {
+        copy {
+            from "build/karaf/kar/"
+            into "/tools/karaf/deploy"
+            include "*.kar"
+        }
+    }
+}
+
+// Result of copyDeviceModels task:
+// ls -l build/test/sbi/
+//   mdm-device-model-sros-16-0-r4.jar
+//   mdm-device-model-sros-19-10-r1.jar
+task copyDeviceModels(type: Copy) {
+    from {
+        project.configurations.deviceModels
+    }
+    rename "(.+)-(\\d+)\\.(\\d+)\\.(\\d+)-rel\\.(\\d+)", '$1' // removes the version part from file name
+    into file("build/test/sbi")
+}
+
+
+task copyAmiModels(type: Copy) {
+    from {
+        project.configurations.amiModels
+    }
+    rename "(.+)-(\\d+)\\.(\\d+)\\.(\\d+)-rel\\.(\\d+)", '$1' // removes the version part from file name
+    into file("build/test/ami")
+}
+
+
+task copyMappingFiles(type: Copy) {
+    from "src/main/resources/meta"
+    include "openconfigToDeviceAttributeMappings.json"
+    into "src/test/resources/meta"
+}
+processTestResources.dependsOn copyDeviceModels,copyAmiModels
+
+
+defaultTasks 'clean', 'build'
